@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Navbar from '../components/NavBar/Navbar'
 
 
-export default function Home() {
+export default function Index() {
   return (
     <div>
       <Head>
