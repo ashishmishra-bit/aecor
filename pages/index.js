@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Header from '../components/Header/Header';
 
-// import { Navbar } from '../components/Navbar';
-import Navbar from "../components/NavBar/Navbar";
+import Navbar from '../components/NavBar/Navbar';
+// import Navbar from "../components/NavBar/Navbar";
 import Card from "../components/Card/card";
 import Whywe from '../components/WhyWe/Whywe';
 
@@ -42,6 +42,7 @@ export default function Home() {
         />
       </div>
       </section>    */}
+      {/* <Header/>     */}
 
     </div>
   );
