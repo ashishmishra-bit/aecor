@@ -1,16 +1,17 @@
 import Head from 'next/head';
+import Header from '../components/Header/Header';
 // import { Navbar } from '../components/Navbar';
 import Navbar from '../components/NavBar/Navbar'
 
 
-export default function Index() {
+export default function Home() {
   return (
     <div>
       <Head>
         <title>Aecor</title>        
       </Head>
       <Navbar />
-      <div className="font-bold title">Hello World</div>
+      <Header />
     </div>
   );
 }

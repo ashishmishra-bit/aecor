@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from '../components/Header/Header';
 // import { Navbar } from '../components/Navbar';
 import Navbar from '../components/NavBar/Navbar'
 
@@ -9,8 +10,7 @@ export default function Home() {
       <Head>
         <title>Aecor</title>        
       </Head>
-      <Navbar />
-      <div className="font-bold title">Hello World</div>
+      <div>tryt</div>
     </div>
   );
 }
