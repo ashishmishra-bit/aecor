@@ -4,6 +4,7 @@ import Header from '../components/Header/Header';
 // import { Navbar } from '../components/Navbar';
 import Navbar from "../components/NavBar/Navbar";
 import Card from "../components/Card/card";
+import Whywe from '../components/WhyWe/Whywe';
 
 export default function Home() {
   return (
@@ -13,9 +14,10 @@ export default function Home() {
       </Head>
       <Navbar />
       <Header />
+      <Whywe />
 
       {/* Body of Home page */}
-      <div className="mx-auto my-auto text-center">
+      {/* <div className="mx-auto my-auto text-center">
         <h1 className="text-3xl md:text-4xl text-purple-900 font-bold">
           What Do we Offer ?
         </h1>
@@ -39,7 +41,7 @@ export default function Home() {
           description="nvest in thousands of companies and fractional shares with as little as $5 using our trading tools and analytics to create your own financial portfolio."
         />
       </div>
-      </section>   
+      </section>    */}
 
     </div>
   );

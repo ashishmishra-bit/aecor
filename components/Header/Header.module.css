@@ -1,43 +1,23 @@
 .header{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+    height: 60vh;
 }
 .headerPattern{
+    position: absolute;
     width: 231px;
     height: 229px;
-    position: absolute;
     left: 51px;
     top: 276px;
-    background-image: url(../Header/HeaderPattern.png);
-    font-weight: 700;
-    font-size: 150px;
-    text-align: center;
-    color: #4F4188;
 }
-.headertext{
-    position:absolute;
-    left: 220px;
-    top: 355px;
-    color: #4F4188;
-}
-.headerTextUpper,
-.headerTextLower{
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 52px;
+.headerText{
+    margin-left: 8%;
+    margin-top: 40vh;
 }
 .headerImage{
-    background-image: url(../Header/HeaderImage.png);
-    background-size: contain;
-    background-color: blueviolet;
     position: absolute;
-    width: 647px;
-    height: 346px;
     left: 672px;
     top: 269px;
 }
-.button{
+.headerButton{
     position: absolute;
     width: 134px;
     left: 129px;
@@ -54,7 +34,7 @@
     border: 1px solid #4F4188;
     cursor: pointer;
 }
-.button:hover{
+.headerButton:hover{
     background-color: white;
     color: black;
     border: 1px solid rgba(6, 77, 179, 0.5);

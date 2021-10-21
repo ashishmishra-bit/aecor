@@ -1,0 +1,33 @@
+.cardContainer{
+    width: 251px;
+    height : 358px;
+    box-shadow: 2px 0px 10px 9px rgba(0, 0, 0, 0.04);
+    border-radius: 48px;
+    overflow: hidden;
+    transition: all 0.5s;
+    animation: ease-in-out;
+    background-color: #fff;
+    padding: 20px 24px 0px 23px ;
+}
+.cardContainer:hover{
+    box-shadow: 2px 0px 10px 9px rgba(0, 0, 0, 0.08);
+    transform: scale(1.05);
+}
+.cardContainer:nth-child(2){
+    margin-top: 78px;
+}
+.imageContainer{
+    overflow: hidden;
+}
+.titleContainer{
+    font-weight: 600;
+    color: #4F4188;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+.descriptionContainer{
+    color: #605D5D;
+    font-weight: 500;
+    font-size: 18px;    
+}
