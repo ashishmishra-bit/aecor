@@ -21,7 +21,7 @@ function Navbar() {
       <button className="bg-purple-700 hover:bg-transparent hover:text-purple-700 border hover:border-purple-700 text-white font-bold py-2 px-6 rounded">
   SignIn
 </button>
-        <button class="bg-transparent hover:bg-purple-700 text-purple-700 font-semibold hover:text-white py-2 px-6 border border-purple-700 hover:border-transparent rounded animate-bounce">
+        <button className="bg-transparent hover:bg-purple-700 text-purple-700 font-semibold hover:text-white py-2 px-6 border border-purple-700 hover:border-transparent rounded animate-bounce">
           SignUp
         </button>
        
