@@ -1,15 +1,18 @@
-import Head from "next/head";
+import Head from 'next/head';
+import Header from '../components/Header/Header';
+
 // import { Navbar } from '../components/Navbar';
 import Navbar from "../components/NavBar/Navbar";
 import Card from "../components/Card/card";
 
-export default function Index() {
+export default function Home() {
   return (
     <div>
       <Head>
         <title>Aecor</title>
       </Head>
       <Navbar />
+      <Header />
 
       {/* Body of Home page */}
       <div className="mx-auto my-auto text-center">
@@ -36,12 +39,7 @@ export default function Index() {
           description="nvest in thousands of companies and fractional shares with as little as $5 using our trading tools and analytics to create your own financial portfolio."
         />
       </div>
-      </section>
-
-
-      
-
-     
+      </section>   
 
     </div>
   );
