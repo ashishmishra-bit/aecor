@@ -22,7 +22,7 @@ function Navbar() {
   SignIn
 </button>
         <button className="bg-transparent hover:bg-purple-700 text-purple-700 font-semibold hover:text-white py-2 px-6 border border-purple-700 hover:border-transparent rounded animate-bounce">
-          SignUp
+          Open Account ↠
         </button>
        
       </div>
