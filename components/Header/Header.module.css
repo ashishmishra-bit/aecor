@@ -6,22 +6,21 @@
     width: 231px;
     height: 229px;
     left: 51px;
-    top: 276px;
+    top: 230px;
 }
 .headerText{
     margin-left: 8%;
-    margin-top: 30vh;
+    margin-top: 150px;
 }
 .headerImage{
     position: absolute;
-    left: 672px;
-    top: 269px;
+    left: 720px;
+    top: 170px;
 }
 .headerButton{
-    position: absolute;
-    width: 134px;
-    left: 129px;
-    top: 553px;
+    width: 154px;
+    margin-top: 40px;
+    margin-left: 8%;
     border-radius: 10px;
     background-color: #4F4188;
     color: white;

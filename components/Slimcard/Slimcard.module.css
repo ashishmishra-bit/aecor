@@ -10,13 +10,7 @@
     padding: 20px 24px 0px 23px ;
     cursor: pointer;
 }
-.cardContainer:hover{
-    box-shadow: 2px 0px 10px 9px rgba(0, 0, 0, 0.08);
-    transform: scale(1.05);
-}
-.cardContainer:nth-child(2){
-    margin-top: 100px;
-}
+
 .imageContainer{
     overflow: hidden;
 }

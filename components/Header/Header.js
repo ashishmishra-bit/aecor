@@ -12,8 +12,7 @@ const Header = () => {
       </div>
       <div className={head.headerButton}>Open Account</div>
       <div className={head.headerImage}>
-
-      <Image src="/img/HeaderImage.png" width="647px" height="346px" />
+        <Image src="/img/HeaderImage.png" width="650px" height="427px" />
       </div>
     </div>
   )

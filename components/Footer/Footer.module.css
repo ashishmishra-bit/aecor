@@ -69,3 +69,24 @@
 .term{
     margin-left: 20px;
 }
+.button{
+    width: 172px;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: #FFF;
+    color: #4F4188;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    padding: 7px 0px;
+    transition: 0.4s all ease;
+    border: 1px solid #4F4188;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #4F4188;
+    border: 1px solid #FFF;
+    color: #FFF;
+    box-sizing: border-box;
+}

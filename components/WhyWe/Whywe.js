@@ -1,7 +1,7 @@
 import style from './Whywe.module.css';
 import Image from "next/image";
 import Slimcard from "../Slimcard/Slimcard";
-
+import VanillaTilt from 'vanilla-tilt';
 
 const Whywe = () => {
   return (
@@ -19,19 +19,25 @@ const Whywe = () => {
       </div>
       <div className={style.whyweSlimCardSection}>
         <div className="mx-auto my-auto flex gap-x-7">
+          <div data-tilt data-tilt-glare data-tilt-max-glare="0.8">
             <Slimcard
             title="Globaly Accepted"
             imgURL="/img/Globe.png"
             />
+          </div>
+          <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" className="mt-20">
             <Slimcard
             title="Globaly Accepted"
             imgURL="/img/Rocket.png"
             className={style.thiscard}
             />
+          </div>
+          <div data-tilt data-tilt-glare data-tilt-max-glare="0.8">
             <Slimcard
             title="Globaly Accepted"
             imgURL="/img/graph.png"
             />
+          </div>
         </div>
       </div>
     </div>

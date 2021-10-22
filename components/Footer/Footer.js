@@ -24,6 +24,7 @@ const Footer = () => {
                 <div className={foot.Text}>xyxsaladk akmnlaj aklda</div>
                 <div className={foot.Text}>abc@gmail.com</div>
                 <div className={foot.Text}>+91-00912 378136</div>
+                <div className={foot.button}>Open Account</div>
             </div>
             <div className={foot.links}>
                 <div className={foot.subTitle}>Links</div>
