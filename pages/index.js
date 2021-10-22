@@ -42,7 +42,6 @@ export default function Home() {
         />
       </div>
       </section>    */}
-      {/* <Header/>     */}
 
     </div>
   );
