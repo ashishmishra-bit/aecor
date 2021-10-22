@@ -24,11 +24,11 @@
 .whyweAbout{
     width: 359px;
     height: 180px;
-    font-style: normal;
-    font-weight: normal;
+    font-style: normal;    
     font-size: 24px;
     line-height: 36px;
     text-align: justify;
+    font-weight: 400;
 }
 .whyweTextSection{
     width: 40%;

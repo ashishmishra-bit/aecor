@@ -5,6 +5,7 @@ import Navbar from "../components/NavBar/Navbar";
 // import Navbar from "../components/NavBar/Navbar";
 import Card from "../components/Card/card";
 import Whywe from "../components/WhyWe/Whywe";
+import Product from "../components/OurProduct/Product";
 import Image from "next/image";
 
 export default function Home() {
@@ -44,7 +45,7 @@ export default function Home() {
           />
         </div>
       </div>
-
+    <Product />
     </div>
   );
 }
