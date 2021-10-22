@@ -26,3 +26,11 @@
     font-weight: 500;
     font-size: 18px;    
 }
+@media (max-width: 600px) {
+    .cardContainer{
+        height: 213px;
+        width: 165px;
+        border-radius: 28px;
+    }
+}
+

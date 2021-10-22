@@ -18,21 +18,21 @@ const Whywe = () => {
         </div>
       </div>
       <div className={style.whyweSlimCardSection}>
-        <div className="mx-auto my-auto flex gap-x-7">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-7">
           <div data-tilt data-tilt-glare data-tilt-max-glare="0.8">
             <Slimcard
             title="Globaly Accepted"
             imgURL="/img/Globe.png"
             />
           </div>
-          <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" className="mt-20">
+          <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" className="mt-8 lg:mt-20">
             <Slimcard
             title="Globaly Accepted"
             imgURL="/img/Rocket.png"
             className={style.thiscard}
             />
           </div>
-          <div data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+          <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" className="mt-8 lg:mt-0">
             <Slimcard
             title="Globaly Accepted"
             imgURL="/img/graph.png"
