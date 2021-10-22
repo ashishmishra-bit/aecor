@@ -7,6 +7,7 @@ import Card from "../components/Card/card";
 import Whywe from "../components/WhyWe/Whywe";
 import Product from "../components/OurProduct/Product";
 import Image from "next/image";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -46,6 +47,7 @@ export default function Home() {
         </div>
       </div>
     <Product />
+    <Footer />
     </div>
   );
 }
