@@ -6,7 +6,7 @@ function Navbar() {
     <header className="flex w-full p-5 justify-between bg-white">
       {/* left side logo */}
       <div className="flex space-x-6 items-center text-purple-900 text-lg cursor-pointer px-12">
-        <Image src="/img/logo.png" height={37} width={157} />
+        <Image src="/img/logo.png" height={50} width={157} />
         <div className="flex space-x-6 items-center px-12">
         <p>About</p>
         <p>Pricing</p>
