@@ -1,10 +1,11 @@
 import Images from "next/image";
 import Card from "../Card/card";
-import VanillaTilt from 'vanilla-tilt';
+import { motion } from "framer-motion";
 
 const Product = () => {
   return (
-    <div className="relative">
+    <div className="relative"
+    transition={{ duration: 0.5 }}>
       <div className="container flex flex-col lg:flex-row items-center gap-12 mt-14 lg:mt-28">
         {/* content */}
         <div className="flex flex-1 flex-col items-center lg:items-start lg:ml-20 md:ml-10 ml-10">

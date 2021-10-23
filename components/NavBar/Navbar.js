@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { useState } from "react";
 // import Logo from '/img/logo.svg';
+import { motion } from "framer-motion"
 import Image from "next/image";
+
+
 
 export const Navbar = () => {
   const [active, setActive] = useState(false);

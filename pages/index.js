@@ -1,17 +1,17 @@
 import Head from "next/head";
 import Header from "../components/Header/Header";
-
+import { motion } from "framer-motion";
 import Navbar from "../components/NavBar/Navbar";
 // import Navbar from "../components/NavBar/Navbar";
 import Card from "../components/Card/card";
 import Whywe from "../components/WhyWe/Whywe";
 import Product from "../components/OurProduct/Product";
 import Image from "next/image";
-import Footer from "../components/Footer/Footer";
+
 
 export default function Home() {
   return (
-    <div>
+    <motion.div initial = {{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       <Head>
         <title>Aecor</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,7 +48,7 @@ export default function Home() {
         </div>
       </div>
     <Product />
-    <Footer />
-    </div>
+
+    </motion.div>
   );
 }
