@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps,router }) {
 
     <AnimatePresence>    
     
-      <ThemeProvider defaultTheme="light" attribute="class">
+      <ThemeProvider  attribute="class" enableSystem = {true}>
       <Layout>
         <motion.div key={router.route}
       initial="initial"
