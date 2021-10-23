@@ -12,7 +12,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="flex items-center flex-wrap bg-white py-2 px-8 lg:px-28 drop-shadow-md fixed w-full z-10 top-0">
+      <nav className="flex items-center flex-wrap bg-white py-2 px-8 lg:px-28 drop-shadow-sm fixed w-full z-10 top-0">
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4 z-10">
             <Image src="/img/logo.png" alt="logo" width={215.15} height={62} />
