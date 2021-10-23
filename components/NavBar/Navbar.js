@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 // import Logo from '/img/logo.svg';
-import { motion } from "framer-motion"
+
 import Image from "next/image";
 
 
@@ -15,7 +15,8 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="flex items-center flex-wrap bg-white py-2 px-8 lg:px-28 drop-shadow-sm fixed w-full z-10 top-0">
+      <nav className="flex items-center flex-wrap bg-white py-2 px-8 lg:px-28 drop-shadow-sm fixed w-full z-10 top-0"     
+      >
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4 z-10">
             <Image src="/img/logo.png" alt="logo" width={215.15} height={62} />
@@ -79,11 +80,15 @@ export const Navbar = () => {
               Sign In
             </button>
        </Link>
-       <Link href ='/signup'>
+       
+       <Link href ='/signup'>         
        <button className="bg-transparent hover:bg-purple-800 text-purple-800 font-semibold lg:flex-grow hover:text-white py-2 px-4 border border-purple-800 hover:border-transparent rounded animate-bounce">
               Open Account
             </button>
        </Link>
+       <span className="flex h-3 lg:visible">  
+  <span className="relative  lg:animate-ping inline-flex rounded-full h-3 w-3 -mt-2 -ml-3 bg-purple-500"></span>
+</span>
        </div>
         </div>
       </nav>

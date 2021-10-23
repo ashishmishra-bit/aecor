@@ -1,8 +1,16 @@
 import { motion } from "framer-motion";
 
 const signup = () => {
+  const config = {
+    type: "spring",
+    damping: 20,
+    stiffness: 100
+  };
   return (
-    <motion.div initial = {{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+    <motion.div transition={config}
+    initial={{ scale: 0, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+    exit={{ x: 0, opacity: 0 }}>
       <div className="container mx-auto py-10 my-48">
         <input type="checkbox" id="flip" />
         <div className="cover">

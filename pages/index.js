@@ -9,14 +9,25 @@ import Product from "../components/OurProduct/Product";
 import Image from "next/image";
 
 
+
 export default function Home() {
+  const config = {
+    type: "spring",
+    damping: 20,
+    stiffness: 100,
+    duration: 0.1,
+  };
   return (
-    <motion.div initial = {{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+    <motion.div >
       <Head>
         <title>Aecor</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Navbar />
+      <motion.div transition={config}
+    initial={{ scale: 0, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+    exit={{ x: 0, opacity: 0 }}>
       <Header />
       <Whywe />
 
@@ -48,6 +59,7 @@ export default function Home() {
         </div>
       </div>
     <Product />
+      </motion.div>
 
     </motion.div>
   );

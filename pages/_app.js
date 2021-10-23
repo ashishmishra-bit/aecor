@@ -2,9 +2,14 @@ import '../styles/globals.css';
 import { DefaultSeo } from 'next-seo'
 import Layout from '../components/Layout';
 import { ThemeProvider } from "next-themes";
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence , motion  } from 'framer-motion';
+import { render } from 'react-dom';
 function MyApp({ Component, pageProps,router }) {
-  const url = `https://aecorcap.net/${router.route}`
+  
+
+  const url = `https://aecorcap.net/${router.route}`;
+  
+
   return (
     <>
       <DefaultSeo
@@ -19,11 +24,25 @@ function MyApp({ Component, pageProps,router }) {
                 }}
                 canonical={url}
             />
+         
 
-    <AnimatePresence>     
+    <AnimatePresence>    
+    
       <ThemeProvider defaultTheme="light" attribute="class">
       <Layout>
+        <motion.div key={router.route}
+      initial="initial"
+      animate="animate"
+      variants={{
+        initial: {
+          opacity: 0,
+        },
+        animate: {
+          opacity: 1,
+        },
+      }}>
       <Component {...pageProps} canonical={url} key={url}/>
+      </motion.div>
       </Layout>
     </ThemeProvider>
     </AnimatePresence>
