@@ -49,17 +49,17 @@ export const Navbar = () => {
                 Home
               </a>
             </Link>
-            <Link href="/">
+            <Link href="">
               <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2">
                 Services
               </a>
             </Link>
-            <Link href="/">
+            <Link href="">
               <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2">
                 About us
               </a>
             </Link>
-            <Link href="/">
+            <Link href="">
               <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2">
                 Contact us
               </a>
@@ -71,12 +71,16 @@ export const Navbar = () => {
             active ? "" : "hidden"
           }   w-full lg:inline-flex lg:flex-grow lg:w-min`}>
        <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full  items-start  flex flex-col lg:h-auto lg:items-start">
-       <button class="bg-transparent hover:bg-transparent bg-purple-800 text-white font-semibold lg:flex-grow hover:text-purple-800 py-2 px-4 border hover:border-purple-800  rounded mr-6">
+       <Link href ='/login'>
+       <button className="bg-transparent hover:bg-transparent bg-purple-800 text-white font-semibold lg:flex-grow hover:text-purple-800 py-2 px-4 border hover:border-purple-800  rounded mr-6">
               Sign In
             </button>
-       <button class="bg-transparent hover:bg-purple-800 text-purple-800 font-semibold lg:flex-grow hover:text-white py-2 px-4 border border-purple-800 hover:border-transparent rounded animate-bounce">
+       </Link>
+       <Link href ='/signup'>
+       <button className="bg-transparent hover:bg-purple-800 text-purple-800 font-semibold lg:flex-grow hover:text-white py-2 px-4 border border-purple-800 hover:border-transparent rounded animate-bounce">
               Open Account
             </button>
+       </Link>
        </div>
         </div>
       </nav>
