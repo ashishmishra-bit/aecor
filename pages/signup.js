@@ -37,7 +37,9 @@ const signup = () => {
               </div>
               <div className="text"><a href="#">Forgot password?</a></div>
               <div className="button input-box">
-                <input type="submit" value="Sumbit"/>
+              <button className="bg-transparent hover:bg-transparent bg-purple-800 text-white font-semibold lg:flex-grow hover:text-purple-800 py-2 px-4 border hover:border-purple-800  rounded mr-6">
+              Sign In
+            </button>
               </div>
               <div className="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
             </div>
@@ -60,7 +62,9 @@ const signup = () => {
                 <input type="password" placeholder="Enter your password" required/>
               </div>
               <div className="button input-box">
-                <input type="submit" value="Sumbit"/>
+              <button className="bg-transparent hover:bg-transparent bg-purple-800 text-white font-semibold lg:flex-grow hover:text-purple-800 py-2 px-4 border hover:border-purple-800  rounded mr-6">
+              Sign Up
+            </button>
               </div>
               <div className="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
             </div>
@@ -112,7 +116,7 @@ const signup = () => {
             position: absolute;
             height: 100%;
             width: 100%;
-            background: #7d2ae8;
+            background:#000000;
             opacity: 0.5;
             z-index: 12;
           }
@@ -176,7 +180,7 @@ const signup = () => {
             bottom: 0;
             height: 3px;
             width: 25px;
-            background: #7d2ae8;
+            background:#000000;
           }
           .forms .signup-form  .title:before{
             width: 20px;
@@ -205,11 +209,11 @@ const signup = () => {
           }
           .form-content .input-box input:focus,
           .form-content .input-box input:valid{
-            border-color: #7d2ae8;
+            border-color:#000000;
           }
           .form-content .input-box i{
             position: absolute;
-            color: #7d2ae8;
+            color:#000000;
             font-size: 17px;
           }
           .forms .form-content .text{
@@ -229,7 +233,7 @@ const signup = () => {
           }
           .forms .form-content .button input{
             color: #fff;
-            background: #7d2ae8;
+            background:#000000;
             border-radius: 6px;
             padding: 0;
             cursor: pointer;
