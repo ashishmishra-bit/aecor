@@ -86,9 +86,7 @@ export const Navbar = () => {
               Open Account
             </button>
        </Link>
-       <span className="flex h-3 lg:visible">  
-  <span className="relative  lg:animate-ping inline-flex rounded-full h-3 w-3 -mt-2 -ml-3 bg-purple-500"></span>
-</span>
+       
        </div>
         </div>
       </nav>
