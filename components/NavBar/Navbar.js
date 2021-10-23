@@ -1,34 +1,76 @@
-import Image from "next/image";
-import styles from './Navbar.module.css';
+import Link from 'next/link';
+import { useState } from 'react';
+// import Logo from '/img/logo.svg';
+import Image from 'next/image';
 
-function Navbar() {
+export const  Navbar = () => {
+  const [active, setActive] = useState(false);
+
+  const handleClick = () => {
+    setActive(!active);
+  };
+
   return (
-    <header className="flex w-full p-5 justify-between bg-white">
-      {/* left side logo */}
-      <div className="flex space-x-6 items-center text-purple-900 text-lg cursor-pointer px-12">
-        <Image src="/img/logo.png" height={50} width={157} />
-        <div className="flex space-x-6 items-center px-12">
-        <p>About</p>
-        <p>Pricing</p>
-        <p>Discovery</p>
-        <p>Contact</p>
-        <p>Products</p>
-        </div>
-      </div>
-
-      {/* menu items */}
-      <div className="flex space-x-6 items-center px-12">
-      <button className="bg-purple-700 hover:bg-transparent hover:text-purple-700 border hover:border-purple-700 text-white font-bold py-2 px-6 rounded">
-  SignIn
-</button>
-        <button className="bg-transparent hover:bg-purple-700 text-purple-700 font-semibold hover:text-white py-2 px-6 border border-purple-700 hover:border-transparent rounded animate-bounce">
-          Open Account
+    <>
+      <nav className='flex items-center flex-wrap bg-white py-2 px-8 lg:px-28 drop-shadow-md fixed w-full z-10 top-0'>
+        <Link href='/'>
+          <a className='inline-flex items-center p-2 mr-4 z-10'>
+            <Image src='/img/logo.png' alt='logo' width={215.15} height={62}/>            
+          </a>
+        </Link>
+        <button
+          className=' inline-flex p-3 hover:bg-purple-800 rounded lg:hidden text-purple-800 ml-auto hover:text-white outline-none'
+          onClick={handleClick}
+        >
+          <svg
+            className='w-6 h-6'
+            fill='none'
+            stroke='currentColor'
+            viewBox='0 0 24 24'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              strokeWidth={2}
+              d='M4 6h16M4 12h16M4 18h16'
+            />
+          </svg>
         </button>
-       
-      </div>
-      
-    </header>
+        {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
+        <div
+          className={`${
+            active ? '' : 'hidden'
+          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+        >
+          <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full  items-start  flex flex-col lg:h-auto lg:items-start'>
+            <Link href='/'>
+              <a className='lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2'>
+                Home
+              </a>
+            </Link>
+            <Link href='/'>
+              <a className='lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2'>
+                Services
+              </a>
+            </Link>
+            <Link href='/'>
+              <a className='lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2'>
+                About us
+              </a>
+            </Link>
+            <Link href='/'>
+              <a className='lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2'>
+                Contact us
+              </a>
+            </Link>
+            <button class="bg-transparent hover:bg-purple-800 text-purple-800 font-semibold hover:text-white py-2 px-4 border border-purple-800 hover:border-transparent rounded animate-bounce">
+  Open Account
+</button>
+          </div>
+        </div>
+      </nav>
+    </>
   );
-}
-
+};
 export default Navbar;
