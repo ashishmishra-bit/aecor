@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import { DefaultSeo } from 'next-seo'
 import Layout from '../components/Layout';
-import { ThemeProvider } from "next-themes";
+
 import { AnimatePresence , motion  } from 'framer-motion';
 import { render } from 'react-dom';
 function MyApp({ Component, pageProps,router }) {
@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps,router }) {
 
     <AnimatePresence>    
     
-      <ThemeProvider  attribute="class" enableSystem = {true}>
+      
       <Layout>
         <motion.div key={router.route}
       initial="initial"
@@ -44,7 +44,7 @@ function MyApp({ Component, pageProps,router }) {
       <Component {...pageProps} canonical={url} key={url}/>
       </motion.div>
       </Layout>
-    </ThemeProvider>
+
     </AnimatePresence>
     </>
     

@@ -1,41 +1,21 @@
 import Link from "next/link";
 
 // import Logo from '/img/logo.svg';
-import {useTheme} from 'next-themes'
-import {MoonIcon , SunIcon } from '@heroicons/react/solid';
-import {useState , useEffect } from 'react';
+
+import { useState } from "react";
 import Image from "next/image";
 
 
 
 export const Navbar = () => {
 
-  const { systemTheme , theme , setTheme } = useTheme();
-  const [mounted , setMounted] = useState(false);
+
   const [active, setActive] = useState(false);
 
-  useEffect(() => {
-    setMounted(true);
-  },[])
+
  
 
-  const toggleTheme = () => {
-    if(!mounted) return null;
-    const currentTheme = theme === 'system' ? systemTheme : theme;
 
-    if(currentTheme === 'dark') {
-      return(
-        <SunIcon className="w-7 h-7" role="button" 
-        onClick={() => setTheme('light')} />
-      )
-    }
-    else {
-      return(
-        <MoonIcon className="w-7 h-7" role="button" 
-        onClick={() => setTheme('dark')} />
-      )
-    }
-  }
 
   const handleClick = () => {
     setActive(!active);
@@ -76,22 +56,22 @@ export const Navbar = () => {
         >
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full  items-start  flex flex-col lg:h-auto lg:items-start">
             <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2 dark:text-white">
+              <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2  ">
                 Home
               </a>
             </Link>
             <Link href="">
-              <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2 dark:text-white">
+              <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2 ">
                 Services
               </a>
             </Link>
             <Link href="">
-              <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2 dark:text-white">
+              <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2 ">
                 About us
               </a>
             </Link>
             <Link href="">
-              <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2 dark:text-white">
+              <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2 ">
                 Contact us
               </a>
             </Link>
@@ -109,11 +89,11 @@ export const Navbar = () => {
        </Link>
        
        <Link href ='/signup'>         
-       <button className="bg-transparent hover:bg-purple-800 text-purple-800 font-semibold lg:flex-grow hover:text-white py-2 px-4 border border-purple-800 hover:border-transparent rounded animate-bounce dark:text-white dark:border-white" >
+       <button className="bg-transparent hover:bg-purple-800 text-purple-800 font-semibold lg:flex-grow hover:text-white py-2 px-4 border border-purple-800 hover:border-transparent rounded animate-bounce " >
               Open Account
             </button>
        </Link>
-        {/* {toggleTheme()}; */}
+       
        </div>
         </div>
       </nav>
