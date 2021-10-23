@@ -9,7 +9,7 @@ import Image from "next/image";
 
 
 export const Navbar = () => {
-  // const [systemTheme ,theme, setTheme] = useState(useTheme());
+
   const { systemTheme , theme , setTheme } = useTheme();
   const [mounted , setMounted] = useState(false);
   const [active, setActive] = useState(false);
@@ -113,7 +113,7 @@ export const Navbar = () => {
               Open Account
             </button>
        </Link>
-        {toggleTheme()};
+        {/* {toggleTheme()}; */}
        </div>
         </div>
       </nav>
