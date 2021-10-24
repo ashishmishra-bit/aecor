@@ -8,7 +8,7 @@ import Whywe from "../components/WhyWe/Whywe";
 import Product from "../components/OurProduct/Product";
 import Image from "next/image";
 import Footer from "../components/Footer/Footer";
-
+// import We from '../components/WhyWe/We';
 
 
 export default function Home() {
@@ -32,8 +32,9 @@ export default function Home() {
     animate={{ scale: 1, opacity: 1 }}
     exit={{ x: 0, opacity: 0 }}>
       <Header />
+      {/* <We /> */}
       <Whywe />
-
+      {/* <We /> */}
       {/* Body of Home page */}
       <div className="py-10">
         <div className="mx-auto text-center mt-10 lg:text-4xl text-purple-900 font-bold mb-5">

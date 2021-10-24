@@ -20,23 +20,26 @@ const Whywe = () => {
           <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
             
           >
-            <Slimcard
+            <Image src = '/img/phone.png' height={461} width={251} className= "transform skew-y-12 hover:animate-pulse cursor-not-allowed"/>
+            {/* <Slimcard
             title="Globaly Accepted"
             imgURL="/img/Globe.png"
-            />
+            /> */}
           </div>
           <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" className="mt-8 lg:mt-20">
-            <Slimcard
+            <Image src = '/img/phone.png' height={461} width={251} className= "transform translate-x-4 translate-y-4"/>
+            {/* <Slimcard
             title="Globaly Accepted"
             imgURL="/img/Rocket.png"
             className={style.thiscard}
-            />
+            /> */}
           </div>
           <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" className="mt-8 lg:mt-0">
-            <Slimcard
+          <Image src = '/img/phone.png' height={461} width={251} className= "transform skew-y-12"/>
+            {/* <Slimcard
             title="Globaly Accepted"
             imgURL="/img/graph.png"
-            />
+            /> */}
           </div>
         </div>
       </div>

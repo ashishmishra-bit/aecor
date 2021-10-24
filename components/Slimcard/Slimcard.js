@@ -6,7 +6,7 @@ const Slimcard = ({ title, imgURL }) => {
     <div className={styles.cardContainer}>
       <div className={styles.cardContent}>
         <div className={styles.imageContainer}>
-          <Image src={imgURL} alt={title} width={204} height={204} />
+          <Image src={imgURL} alt={title} width={151} height={321} />
         </div>
         <div className={styles.titleContainer}>
           <h3 className="text-base md:text-3xl">{title}</h3>

@@ -4,7 +4,7 @@ import Image from "next/image";
 const card = ({ title, imgURL, description }) => {
   return (    
     <div className = "drop-shadow-lg">
-      <div className = "py-10">
+      <div className = "py-10" >
         <div className = "bg-white rounded-3xl overflow-hidden  max-w-sm px-4 py-4">
           <Image src = {imgURL} alt = {title} width = {91} height = {91} />
           <div className = "px-4 py-4">

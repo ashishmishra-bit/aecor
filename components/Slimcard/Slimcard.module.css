@@ -13,6 +13,7 @@
 
 .imageContainer{
     overflow: hidden;
+    align-items: center;
 }
 .titleContainer{
     font-weight: 600;
