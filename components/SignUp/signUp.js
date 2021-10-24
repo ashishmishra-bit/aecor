@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 
 const signUp = () => {
     return (
@@ -6,18 +6,21 @@ const signUp = () => {
             <div className="formBox">
                 <div className = "btnBox">
                     <div id="btn"></div>
-                    <button type="button" className="toggle-btn" onclick="register()">Sign Up</button>
-                    <button type="button" className="toggle-btn" onclick="login()">Login</button>
+                    <button type="button" className="toggle-btn" >Sign Up</button>
+                    <Link href="/">
+                    <button type="button" className="toggle-btn">home</button>
+                    </Link>
                 </div>
                 <form id = "register" className = "inputGrp">
+                <input type="text" placeholder="Name" className="inputField" required />
                     <input type="email" placeholder="E-mail" className="inputField" required />
                     <input type="text" placeholder="Phone Number" className="inputField" required />
                     <input type="checkbox" className="checkBox"/><span>I agreed to T&C</span>
                     <button type="submit" className="submitBtn">SignUp</button>
                 </form>
-                
+                <h1 className="text-center text-2xl" >Open a new account</h1>
             </div>
- 
+        
            
 
             <style jsx>{`
@@ -94,9 +97,7 @@ const signUp = () => {
                 #register{
                     left:50px;
                 }
-                #login{
-                    left:-450px;
-                }
+                
 
             `}</style>
         </div>
