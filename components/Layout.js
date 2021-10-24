@@ -15,8 +15,7 @@ const Layout = ({ children }) => {
             <Navbar />
             <motion.main>
             {children}
-            </motion.main>
-           
+            </motion.main>           
             <Footer />
         </div>
     )
