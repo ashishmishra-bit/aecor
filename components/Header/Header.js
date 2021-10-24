@@ -4,8 +4,8 @@ import Image from "next/image";
 const Header = () => {
   return (
     <div className={head.header}>
-      <div  className={head.headerPattern}>
-      <Image className = "animate-pulse" src="/img/HeaderPattern.png" width="231px" height="229px" />
+      <div className="absolute ml-10">
+        <Image className = "animate-pulse" src = "/img/art.png" height={229} width={231}/>
       </div>
       <div className={head.headerText}>
         <Image  src="/img/HeaderText.png" width="435px" height="225px" />

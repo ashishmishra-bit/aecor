@@ -1,5 +1,6 @@
 .footer{
     padding: 71px 98px 40px 98px;
+    /* width: 100%; */
     background-color: #3d0761;
 }
 .sectionOne{
@@ -47,6 +48,28 @@
     color:#D2D2D7;
     text-align: left;
 }
+.button{
+    width: 172px;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: #FFF;
+    color: #4F4188;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    padding: 7px 0px;
+    transition: 0.4s all ease;
+    border: 1px solid #4F4188;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #4F4188;
+    border: 1px solid #FFF;
+    color: #FFF;
+    box-sizing: border-box;
+}
+/* Section Three */
 .sectionThree{
     padding-top: 40px;
     display: flex;
@@ -69,24 +92,57 @@
 .term{
     margin-left: 20px;
 }
-.button{
-    width: 172px;
-    margin-top: 40px;
-    border-radius: 10px;
-    background-color: #FFF;
-    color: #4F4188;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    text-align: center;
-    padding: 7px 0px;
-    transition: 0.4s all ease;
-    border: 1px solid #4F4188;
-    cursor: pointer;
-}
-.button:hover{
-    background-color: #4F4188;
-    border: 1px solid #FFF;
-    color: #FFF;
-    box-sizing: border-box;
+@media (max-width: 600px) {
+    .footer{
+        width: 100vw;
+
+    padding: 36px 50px;
+    }
+    .sectionOne{
+        display: flex;
+        flex-direction: column;
+    }
+    .title{
+        height: 90px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        border-right: none;
+    }
+    /* Section Two */
+    .sectionTwo{
+        display: flex;
+        margin-top: 0px;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+    }
+    .address{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .subTitle{
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .Text{
+        text-align: center;
+    }
+    /* Section Three */
+    .sectionThree{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .copyright{
+        margin-bottom: 20px;
+    }
 }

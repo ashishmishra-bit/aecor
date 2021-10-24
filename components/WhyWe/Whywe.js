@@ -7,9 +7,6 @@ const Whywe = () => {
   return (
     <div className={style.whywe}>
       <div className={style.whyweTextSection}>
-        <div  className={style.whywePattern}>
-          <Image src="/img/HeaderPattern.png" width="231px" height="229px" />
-        </div>
         <div className={style.whyweTitle}>
             Why We Are Better Than Other.
         </div>

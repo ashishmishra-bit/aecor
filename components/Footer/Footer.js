@@ -6,14 +6,14 @@ const Footer = () => {
     <div className={foot.footer}>
         <div className={foot.sectionOne}>
             <div className={foot.title}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-            <div className="flex items-center justify-center ml-10">
-                <div className="ml-6">
+            <div className="flex items-center justify-center mt-7 lg:ml-10">
+                <div className="lg:ml-6">
                     <Image src="/img/Twitter.png" width="35px" height="35px" />
                 </div>
-                <div className="ml-6">
+                <div className="ml-5 lg:ml-6">
                     <Image src="/img/Facebook.png" width="35px" height="35px" />
                 </div>
-                <div className="ml-6">
+                <div className="ml-5 lg:ml-6">
                     <Image src="/img/Linkedin.png" width="35px" height="35px" />
                 </div>
             </div>

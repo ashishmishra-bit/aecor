@@ -46,21 +46,16 @@
 
 @media (max-width: 600px) {
     .header{
-        height: 400px;
+        height: 100%;
     }
     .headerImage{
         display: none;
     }
-    .headerPattern{
-        height: 185px;
-        width: 187px;
-        left: 10px;
-        top: 77px;
-    }
     .headerText{
         width: 220px;
-        margin-left: 25px;
-        margin-top: 10px;
+        margin-left: 75px;
+        margin-top: 120px;
+        padding-top: 40px;
     }
     .about{
         display: block;
@@ -70,13 +65,11 @@
         font-weight: 400;
         line-height: 27px;
         letter-spacing: 0em;
-        text-align: justified;
-        padding: 0px 20px ;
+        margin-left: 75px;
     }
     .headerButton{
         width: 154px;
         padding: 7px 0px;
-        margin-left: 20px;
-        margin-top: 20px;
+        margin: 20px 0px 40px 70px;
     }
 }

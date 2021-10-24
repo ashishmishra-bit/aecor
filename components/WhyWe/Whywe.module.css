@@ -5,13 +5,6 @@
     padding: 80px 98px;
     overflow: hidden;
 }
-.whywePattern{
-    position: absolute;
-    width: 231px;
-    height: 229px;
-    left: 35px;
-    top: 704px;
-}
 .whyweTitle{
     width: 249px;
     height: 180px;
@@ -36,18 +29,12 @@
 }
 @media (max-width: 600px) {
     .whywe{
+        width: 100%;
         background: #91DBF61F;
         display: flex;
         flex-direction: column;
         height: 100%;
-        padding: 40px 0px;
-    }
-    .whywePattern{
-        width: 191px;
-        height: 185px;
-        left: 14px;
-        top: 530px;
-        z-index: -1;
+        padding: 40px 75px;
     }
     .whyweTitle{
         height: 90px;
@@ -67,11 +54,12 @@
         font-weight: 400;
         line-height: 27px;
         letter-spacing: 0em;
-        text-align: justified;
-        padding: 0px 20px ;
+        text-align: center;
+        padding: 10px 20px;
     }
     .whyweSlimCardSection{
-        width: 100%;
-        margin-left: 15%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
     }
 }
