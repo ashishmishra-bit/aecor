@@ -1,11 +1,21 @@
 import React from 'react'
+import { motion } from "framer-motion";
+import Signin from '../components/Login/Login';
 
-const login = () => {
-    return (
-        <div className="h-96">
-            <h1>Login this page</h1>
-        </div>
-    )
-}
+const Login = () => {
+  const config = {
+    type: "spring",
+    damping: 20,
+    stiffness: 100
+  };
+  return (
+    <motion.div> 
+      <section className = "loginHeader">
+        <Signin />
+      </section>      
+    </motion.div>
+  );
+};
 
-export default login
+export default Login;
+

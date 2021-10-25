@@ -2,14 +2,11 @@ import Head from "next/head";
 import Header from "../components/Header/Header";
 import { motion } from "framer-motion";
 import Navbar from "../components/NavBar/Navbar";
-// import Navbar from "../components/NavBar/Navbar";
 import Card from "../components/Card/card";
-import Whywe from "../components/WhyWe/Whywe";
 import Product from "../components/OurProduct/Product";
 import Image from "next/image";
 import Footer from "../components/Footer/Footer";
 import We from '../components/WhyWe/We';
-
 
 export default function Home() {
   const config = {
@@ -24,17 +21,14 @@ export default function Home() {
         <title>Aecor</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon1.ico" />
-        
       </Head>
       <Navbar />
       <motion.div transition={config}
-    initial={{ scale: 0, opacity: 0 }}
-    animate={{ scale: 1, opacity: 1 }}
-    exit={{ x: 0, opacity: 0 }}>
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ x: 0, opacity: 0 }}>
       <Header />
       <We />
-      <Whywe />
-      {/* <We /> */}
       {/* Body of Home page */}
       <div className="py-10">
         <div className="mx-auto text-center mt-10 lg:text-4xl text-purple-900 font-bold mb-5">
@@ -62,10 +56,9 @@ export default function Home() {
           />
         </div>
       </div>
-    <Product />
-    <Footer />
+      <Product />
+      <Footer />
       </motion.div>
-
     </motion.div>
   );
 }
