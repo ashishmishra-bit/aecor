@@ -11,12 +11,26 @@
 @layer base{
     
 }
-.signUpHeader{
+.signUpHeader,
+.loginHeader{
     background-image: linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)) ,url("/img/diwali.png");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     height:100vh;
     width:100vw;
     position: absolute;
 }
+
+@media (min-width: 600px){
+    .signUpHeader,
+    .loginHeader{
+        background-size: contain;
+        background-repeat: repeat;
+    }
+}
+
+    
+
+
 

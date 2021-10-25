@@ -8,20 +8,20 @@ const We = () => {
   const [props, set] = useSpring(() => ({ xys: [0, 0, 1] , config: config.default}))
   return (
     <div className="bg-blue-50 overflow-x-hidden">
-        <div className="absolute lg:mt-48 lg:ml-10 z-10">
+        <div className="absolute lg:mt-60 lg:ml-10 mt-10 ml-5">
         <Image src = "/img/art.png" height={229} width={231}/>
         </div>
-      <div className="container flex flex-col lg:flex-row items-center gap-12 mt-14 lg:mt-28 ml-28">
+      <div className="container flex flex-col lg:flex-row items-center gap-12 mt-14 lg:mt-28 ml-28 -ml-8">
         {/* content */}
         
-        <div className="flex flex-1 flex-col items-center lg:items-start  md:ml-10 ml-10">
+        <div className="flex flex-1 flex-col items-center lg:items-start  md:ml-10 ml-10 lg:ml-32">
         
-          <h2 className="text-purple-900 text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6 font-bold">
+          <h2 className="text-purple-900 text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6 font-bold z-10">
             Why We Are <br />
             Better Than Others
           </h2>
           
-          <p className="text-bookmark-grey text-lg  lg:text-left mb-6 break-words text-gray-500 text-justify lg:w-5/6">
+          <p className="text-bookmark-grey text-lg  lg:text-left mb-6 break-words text-gray-500 text-justify lg:w-5/6 ml-5 lg:ml-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
             dignissim tempus ligula, sedlyf egestas libero pharetra
             eget.Phasellus dignissim tempus ligula, sedlyf egestas libero
@@ -30,7 +30,7 @@ const We = () => {
           </p>
         </div>
         {/* image */}
-        <div className="flex-col justify-center flex-1 mb-10 md:mb-16 lg:mb-0 lg:ml-60">
+        <div className="flex-col justify-center flex-1 mb-10 md:mb-16 lg:mb-0 lg:ml-60 ml-16">
         <animated.div className = "cursor-pointer" onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x, y)}))}
             onMouseLeave={() => set({xys:[0,0,1]})}
             style={{
@@ -47,7 +47,7 @@ const We = () => {
             <Image src="/img/android.png" width={251} height={358} />
           </animated.div>
         </div>
-        <animated.div className="lg:-ml-52 flex-col justify-center flex-1 mb-10 md:mb-16 lg:mb-0 cursor-pointer"
+        <animated.div className="lg:-ml-52 flex-col justify-center flex-1 mb-10 md:mb-16 lg:mb-0 cursor-pointer ml-16 -mt-20"
         onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x, y)}))}
         onMouseLeave={() => set({xys:[0,0,1]})}
         style={{

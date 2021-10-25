@@ -1,24 +1,21 @@
 import Link from 'next/link';
 
-const signUp = () => {
+const Signin = () => {
     return (
         <div>
-            <div className="formBox overflow-x-hidden" >
-                <div className = "btnBox">
+            <div className="formBox">
+            <div className = "btnBox">
                     <div id="btn"></div>
-                    <button type="button" className="toggle-btn" >Sign Up</button>
+                    <button type="button" className="toggle-btn" >Login</button>
                     <Link href="/">
                     <button type="button" className="toggle-btn">home</button>
                     </Link>
                 </div>
                 <form id = "register" className = "inputGrp">
-                <input type="text" placeholder="Name" className="inputField" required />
-                    <input type="email" placeholder="E-mail" className="inputField" required />
                     <input type="text" placeholder="Phone Number" className="inputField" required />
-                    <input type="checkbox" className="checkBox"/><span>I agreed to T&C</span>
-                    <button type="submit" className="submitBtn">SignUp</button>
+                    <button type="submit" className="submitBtn">Login</button>
                 </form>
-                <h1 className="text-center text-2xl" >Open a new account</h1>
+                <h1 className="text-center text-2xl" >Login to Trading World</h1>
             </div>
         
            
@@ -83,6 +80,7 @@ const signUp = () => {
                     cursor:pointer;
                     display:block;
                     margin:auto;
+                    margin-top : 20px;
                     background:linear-gradient(to right , #20BDFF, #A5FECB);
                     border-radius:30px;
                     border:0;
@@ -109,4 +107,4 @@ const signUp = () => {
     )
 }
 
-export default signUp
+export default Signin

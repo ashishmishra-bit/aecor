@@ -1,11 +1,17 @@
 import React from 'react'
 
-const login = () => {
-    return (
-        <div className="h-96">
-            <h1>Login this page</h1>
-        </div>
-    )
-}
+import Signin from '../components/Login/Login';
 
-export default login
+const Login = () => {
+  
+  return (
+    <div> 
+      <section className = "loginHeader flex justify-center items-center">
+        <Signin />
+      </section>      
+    </div>
+  );
+};
+
+export default Login;
+

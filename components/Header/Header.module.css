@@ -47,6 +47,7 @@
 @media (max-width: 600px) {
     .header{
         height: 100%;
+        margin-top:-100px;
     }
     .headerImage{
         display: none;

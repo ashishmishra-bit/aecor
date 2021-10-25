@@ -10,7 +10,7 @@ const SignUpNew = () => {
         </section>
       </div>
       <div className="right">
-        <form>
+        <form className="-mt-10 lg:mt-0">
           <section className="copy">
               <h2>Sign Up</h2>
               <div className = "loginContainer">
