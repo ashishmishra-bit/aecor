@@ -1,32 +1,23 @@
 import Link from "next/link";
 
-// import Logo from '/img/logo.svg';
+
 
 import { useState } from "react";
 import Image from "next/image";
 
-
-
 export const Navbar = () => {
-
-
+  
   const [active, setActive] = useState(false);
-
-
- 
-
-
-
   const handleClick = () => {
     setActive(!active);
   };
 
   return (
     <>
-      <nav className="flex items-center flex-wrap bg-white py-2 px-8 lg:px-28 drop-shadow-sm  w-full z-10 top-0 dark:border-gray-700 dark:bg-gray-900">
+      <nav className="flex items-center flex-wrap bg-white py-2 px-8 lg:px-28  w-full z-10 top-0 dark:border-gray-700 dark:bg-gray-900">
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4 z-10">
-            <Image src="/img/logo.png" alt="logo" width={215.15} height={62} />
+            <Image src="/img/logo.png" alt="logo" width={215.15} height={48} />
           </a>
         </Link>
         <button
@@ -60,7 +51,7 @@ export const Navbar = () => {
                 Home
               </a>
             </Link>
-            <Link href="">
+            <Link href="/service">
               <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2 ">
                 Services
               </a>
@@ -70,31 +61,31 @@ export const Navbar = () => {
                 About us
               </a>
             </Link>
-            <Link href="">
-              <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2 ">
-                Contact us
+            <Link href="/newSignup">
+            <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2 ">
+                Contact Us
               </a>
-            </Link>
-            
+            </Link>            
           </div>
         </div>
-        <div className={`${
+        <div
+          className={`${
             active ? "" : "hidden"
-          }   w-full lg:inline-flex lg:flex-grow lg:w-min`}>
-       <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full  items-start  flex flex-col lg:h-auto lg:items-start">
-       <Link href ='/login'>
-       <button className="bg-transparent hover:bg-transparent bg-purple-800 text-white font-semibold lg:flex-grow hover:text-purple-800 py-2 px-4 border hover:border-purple-800  rounded mr-6">
-              Sign In
-            </button>
-       </Link>
-       
-       <Link href ='/signup'>         
-       <button className="bg-transparent hover:bg-purple-800 text-purple-800 font-semibold lg:flex-grow hover:text-white py-2 px-4 border border-purple-800 hover:border-transparent rounded animate-bounce " >
-              Open Account
-            </button>
-       </Link>
-       
-       </div>
+          }   w-full lg:inline-flex lg:flex-grow lg:w-min`}
+        >
+          <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full  items-start  flex flex-col lg:h-auto lg:items-start">
+            <Link href="/login">
+              <button className="bg-transparent hover:bg-transparent bg-purple-800 text-white font-semibold lg:flex-grow hover:text-purple-800 py-2 px-4 border hover:border-purple-800  rounded mr-6">
+                Sign In
+              </button>
+            </Link>
+
+            <Link href="/signup">
+              <button className="bg-transparent hover:bg-purple-800 text-purple-800 font-semibold lg:flex-grow hover:text-white py-2 px-4 border border-purple-800 hover:border-transparent rounded lg:animate-bounce ">
+                Open Account
+              </button>
+            </Link>           
+          </div>
         </div>
       </nav>
     </>

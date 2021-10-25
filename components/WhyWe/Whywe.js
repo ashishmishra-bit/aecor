@@ -1,7 +1,7 @@
 import style from './Whywe.module.css';
 import Image from "next/image";
 import Slimcard from "../Slimcard/Slimcard";
-import { motion } from "framer-motion";
+
 
 const Whywe = () => {
   return (
@@ -20,8 +20,8 @@ const Whywe = () => {
           <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
             
           >
-            {/* <Image src = '/img/phone.png' height={461} width={251} className= "transform skew-y-12 hover:animate-pulse cursor-not-allowed"/> */}
-            {/* <Slimcard
+            {/* <Image src = '/img/phone.png' height={461} width={251}/>
+            <Slimcard
             title="Globaly Accepted"
             imgURL="/img/Globe.png"
             /> */}

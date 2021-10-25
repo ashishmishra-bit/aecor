@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header/Header";
-import { motion } from "framer-motion";
+
 import Navbar from "../components/NavBar/Navbar";
 // import Navbar from "../components/NavBar/Navbar";
 import Card from "../components/Card/card";
@@ -12,14 +12,9 @@ import We from '../components/WhyWe/We';
 
 
 export default function Home() {
-  const config = {
-    type: "spring",
-    damping: 20,
-    stiffness: 100,
-    duration: 0.1,
-  };
+
   return (
-    <motion.div >
+    <div >
       <Head>
         <title>Aecor</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,10 +22,7 @@ export default function Home() {
         
       </Head>
       <Navbar />
-      <motion.div transition={config}
-    initial={{ scale: 0, opacity: 0 }}
-    animate={{ scale: 1, opacity: 1 }}
-    exit={{ x: 0, opacity: 0 }}>
+      <div>
       <Header />
       <We />
       <Whywe />
@@ -64,8 +56,8 @@ export default function Home() {
       </div>
     <Product />
     <Footer />
-      </motion.div>
+      </div>
 
-    </motion.div>
+    </div>
   );
 }

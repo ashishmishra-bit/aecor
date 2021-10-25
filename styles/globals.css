@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 @layer base{
@@ -18,3 +19,4 @@
     width:100vw;
     position: absolute;
 }
+

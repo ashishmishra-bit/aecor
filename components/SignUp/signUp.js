@@ -3,7 +3,7 @@ import Link from 'next/link';
 const signUp = () => {
     return (
         <div>
-            <div className="formBox">
+            <div className="formBox" >
                 <div className = "btnBox">
                     <div id="btn"></div>
                     <button type="button" className="toggle-btn" >Sign Up</button>

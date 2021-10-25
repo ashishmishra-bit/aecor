@@ -1,11 +1,10 @@
 import Images from "next/image";
 import Card from "../Card/card";
-import { motion } from "framer-motion";
+
 
 const Product = () => {
   return (
-    <div className="relative"
-    transition={{ duration: 0.5 }}>
+    <div className="relative">
       <div className="container flex flex-col lg:flex-row items-center gap-12 mt-14 lg:mt-28">
         {/* content */}
         <div className="flex flex-1 flex-col items-center lg:items-start lg:ml-20 md:ml-10 ml-10">
@@ -21,7 +20,7 @@ const Product = () => {
         </div>
         {/* image */}
         <div className="flex-col justify-center flex-1 mb-10 md:mb-16 lg:mb-0">
-            <div data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+            <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" className="cursor-pointer">
             <Card 
             title="Finkarma.in"
             imgURL= "/img/finkarma.png"
@@ -29,7 +28,7 @@ const Product = () => {
             />
             </div>  
 
-            <div data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+            <div className="cursor-pointer" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
             <Card 
             title="Finkarma.in"
             imgURL= "/img/finkarma.png"

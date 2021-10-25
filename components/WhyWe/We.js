@@ -1,8 +1,13 @@
 import Image from "next/image";
+import { useSpring, animated, config } from 'react-spring';
+
+const calc = (x, y) => [-(y - window.innerHeight / 2) / 50, (x - window.innerWidth / 2) / 50, 1]
+const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 const We = () => {
+  const [props, set] = useSpring(() => ({ xys: [0, 0, 1] , config: config.default}))
   return (
-    <div className="bg-blue-50">
+    <div className="bg-blue-50 overflow-x-hidden">
         <div className="absolute lg:mt-48 lg:ml-10 z-10">
         <Image src = "/img/art.png" height={229} width={231}/>
         </div>
@@ -26,22 +31,31 @@ const We = () => {
         </div>
         {/* image */}
         <div className="flex-col justify-center flex-1 mb-10 md:mb-16 lg:mb-0 lg:ml-60">
-          <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" className = "cursor-pointer">
+        <animated.div className = "cursor-pointer" onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x, y)}))}
+            onMouseLeave={() => set({xys:[0,0,1]})}
+            style={{
+                transform: props.xys.interpolate(trans)
+            }}>
             <Image src="/img/ios.png" width={251} height={358} />
-          </div>
+          </animated.div>
 
-          <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" className = "cursor-pointer">
+          <animated.div  className = "cursor-pointer" onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x, y)}))}
+            onMouseLeave={() => set({xys:[0,0,1]})}
+            style={{
+                transform: props.xys.interpolate(trans)}}
+          >
             <Image src="/img/android.png" width={251} height={358} />
-          </div>
+          </animated.div>
         </div>
-        <div
-          data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="0.8"
-          className="lg:-ml-52 flex-col justify-center flex-1 mb-10 md:mb-16 lg:mb-0 cursor-pointer"
+        <animated.div className="lg:-ml-52 flex-col justify-center flex-1 mb-10 md:mb-16 lg:mb-0 cursor-pointer"
+        onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x, y)}))}
+        onMouseLeave={() => set({xys:[0,0,1]})}
+        style={{
+            transform: props.xys.interpolate(trans)}}
+      
         >
           <Image src="/img/web.png" width={251} height={358} />
-        </div>
+        </animated.div>
       </div>
 
       <style jsx>{`
