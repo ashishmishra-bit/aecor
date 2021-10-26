@@ -7,7 +7,7 @@ const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg)
 const We = () => {
   const [props, set] = useSpring(() => ({ xys: [0, 0, 1] , config: config.default}))
   return (
-    <div className="bg-blue-50 overflow-x-hidden">
+    <div className=" overflow-x-hidden">
         <div className="absolute lg:mt-60 lg:ml-10 mt-10 ml-5">
         <Image src = "/img/art.png" height={229} width={231}/>
         </div>
