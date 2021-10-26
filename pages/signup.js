@@ -6,7 +6,7 @@ const signup = () => {
   return (
 
     <div> 
-      <section className = "signUpHeader flex justify-center items-center" >
+      <section>
         {/* <img src="/img/diwali.png" className="object-cover w-full h-full" alt="" /> */}
         <SignUp />
       </section> 
