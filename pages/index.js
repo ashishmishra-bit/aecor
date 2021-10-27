@@ -6,6 +6,7 @@ import Product from "../components/OurProduct/Product";
 import Image from "next/image";
 import Footer from "../components/Footer/Footer";
 import We from "../components/WhyWe/We";
+import Blogs from "../components/Blog/blog";
 import { useSpring, animated, config } from 'react-spring';
 import lottie from 'lottie-web';
 import { useEffect , useRef } from 'react';
@@ -43,7 +44,9 @@ export default function Home() {
       <Navbar />
       <div>
         <Header />
+        
         <We />
+        <Blogs />
         {/* Body of Home page */}
         {/* <div className="py-10">
           <div className="mx-auto text-center mt-10 lg:text-4xl text-purple-900 font-bold mb-5 text-3xl">
@@ -187,6 +190,7 @@ export default function Home() {
       </div>
     </div>
         </div>
+        
         <Product />
         <Footer />
       </div>
