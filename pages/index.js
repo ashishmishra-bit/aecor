@@ -32,7 +32,7 @@ export default function Home() {
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("../assets/bitcoin.json"),
+      animationData: require("../assets/top10stocks.json"),
     });
   }, []);
 
