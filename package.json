@@ -17,6 +17,7 @@
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.4",
     "bootstrap": "^5.1.3",
+    "lottie-web": "^5.7.14",
     "next": "11.1.2",
     "next-seo": "^4.28.1",
     "next-theme": "^0.1.5",

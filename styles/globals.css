@@ -10,7 +10,9 @@
 }
 
 @layer base{
-    
+    body{
+        font-family: '', sans-serif;
+    }
 }
 .signUpHeader,
 .loginHeader{
