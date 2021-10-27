@@ -140,12 +140,12 @@ export default function Home() {
           >
             <img
               className="object-cover mb-6 rounded shadow-sm h-full sm:h-full xl:h-full w-28 sm:w-48 xl:w-56"
-              src="/img/ios.png"
+              src="https://images.pexels.com/photos/7788007/pexels-photo-7788007.jpeg?cs=srgb&dl=pexels-ivan-babydov-7788007.jpg&fm=jpg"
               alt=""
             />
             <img
               className="object-cover w-28 h-full rounded shadow-sm sm:h-full xl:h-full sm:w-48 xl:w-56"
-              src="/img/web.png"
+              src="https://images.pexels.com/photos/386318/pexels-photo-386318.jpeg?cs=srgb&dl=pexels-michael-steinberg-386318.jpg&fm=jpg"
               alt=""
             />
           </animated.div>
@@ -157,8 +157,8 @@ export default function Home() {
           
           >
             <img
-              className="object-cover w-40 h-full rounded shadow-sm sm:h-full xl:h-full sm:w-64 xl:w-80"
-              src="/img/android.png"
+              className="object-cover w-40  rounded shadow-sm sm:h-full xl:h-96 sm:w-64 xl:w-80 h-32"
+              src="https://images.pexels.com/photos/157520/pexels-photo-157520.jpeg?cs=srgb&dl=pexels-anthony-157520.jpg&fm=jpg"
               alt=""
             />
           </animated.div>
