@@ -84,9 +84,7 @@ const We = () => {
               </span>
             </h2>
             <p className="text-base text-gray-500 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae. explicabo.
+Leading online trading platforms for traders, investors, and advisors, providing direct access to stocks, options, futures, currencies, and mutual funds.
             </p>
           </div>
           <p className="mb-4 text-sm font-bold tracking-widest uppercase text-purple-700">
@@ -110,7 +108,7 @@ const We = () => {
                     />
                   </svg>
                 </span>
-                A slice of heaven
+                Stocks
               </li>
               <li className="flex">
                 <span className="mr-1">
@@ -128,7 +126,7 @@ const We = () => {
                     />
                   </svg>
                 </span>
-                Disrupt inspire
+                Mutual Funds
               </li>
               <li className="flex">
                 <span className="mr-1">
@@ -146,7 +144,7 @@ const We = () => {
                     />
                   </svg>
                 </span>
-                Preliminary thinking
+                Future & Options
               </li>
             </ul>
             <ul className="space-y-3">
@@ -166,7 +164,7 @@ const We = () => {
                     />
                   </svg>
                 </span>
-                Flipboard curmudgeon
+                IPO
               </li>
               <li className="flex">
                 <span className="mr-1">
@@ -184,7 +182,7 @@ const We = () => {
                     />
                   </svg>
                 </span>
-                Storage shed
+                Commodity
               </li>
               <li className="flex">
                 <span className="mr-1">
@@ -202,7 +200,7 @@ const We = () => {
                     />
                   </svg>
                 </span>
-                Satoshi Nakamoto
+                Currency
               </li>
             </ul>
           </div>
