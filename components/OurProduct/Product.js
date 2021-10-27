@@ -73,7 +73,7 @@ const Product = () => {
                 <rect
                   fill="url(#27df4f81-c854-45de-942a-fe90f7a300f9)"
                   width="52"
-                  height="24"                  
+                  height="24"
                 />
               </svg>
               <span className="relative text-purple-900">The</span>
@@ -105,9 +105,7 @@ const Product = () => {
               </div>
             </div>
             <div>
-              <h6 className="mb-3 text-xl  leading-5 font-extrabold">
-                Stock
-              </h6>
+              <h6 className="mb-3 text-xl  leading-5 font-extrabold">Stock</h6>
               <p className="mb-3 text-sm text-gray-600">
                 A flower in my garden, a mystery in my panties. Heart attack
                 never stopped old Big Bear. I didn't even know we were calling
@@ -141,9 +139,7 @@ const Product = () => {
               </div>
             </div>
             <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">
-                Mutual Funds
-              </h6>
+              <h6 className="mb-3 text-xl font-bold leading-5">Mutual Funds</h6>
               <p className="mb-3 text-sm text-gray-600">
                 Rough pomfret lemon shark plownose chimaera southern sandfish
                 kokanee northern sea robin Antarctic cod. Yellow-and-black
@@ -215,9 +211,7 @@ const Product = () => {
               </div>
             </div>
             <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">
-                DP Services
-              </h6>
+              <h6 className="mb-3 text-xl font-bold leading-5">DP Services</h6>
               <p className="mb-3 text-sm text-gray-600">
                 Disrupt inspire and think tank, social entrepreneur but
                 preliminary thinking think tank compelling. Inspiring, invest
@@ -307,7 +301,13 @@ const Product = () => {
               </a>
             </div>
           </div>
+          
         </div>
+        <div className="flex items-center justify-center pt-10">
+            <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-purple-500 text-purple-700 text-lg rounded-lg hover:bg-purple-500 hover:text-white ">
+              View More Services
+            </button>
+          </div>
       </div>
     </>
   );
