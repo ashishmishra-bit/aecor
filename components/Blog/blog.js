@@ -21,7 +21,7 @@ const blog = () => {
                 aria-label="Article"
                 className="inline-block mb-3 text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-700"
               >
-                <p className="text-2xl font-bold leading-7">
+                <p className="text-2xl font-bold leading-7 hover:text-purple-700">
                   Trending: How to build a successful online business
                 </p>
               </a>
@@ -114,7 +114,7 @@ const blog = () => {
                 aria-label="Article"
                 className="inline-block mb-3 text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-700"
               >
-                <p className="text-2xl font-bold leading-7">
+                <p className="text-2xl font-bold leading-7 hover:text-purple-700">
                   Trending: How to build a successful online business
                 </p>
               </a>
@@ -207,7 +207,7 @@ const blog = () => {
                 aria-label="Article"
                 className="inline-block mb-3 text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-700"
               >
-                <p className="text-2xl font-bold leading-7">
+                <p className="text-2xl font-bold leading-7 hover:text-purple-700">
                   Trending: How to build a successful online business
                 </p>
               </a>
