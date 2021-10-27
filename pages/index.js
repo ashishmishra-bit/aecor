@@ -7,10 +7,29 @@ import Image from "next/image";
 import Footer from "../components/Footer/Footer";
 import We from "../components/WhyWe/We";
 import { useSpring, animated, config } from 'react-spring';
+import lottie from 'lottie-web';
+import { useEffect , useRef } from 'react';
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 50, (x - window.innerWidth / 2) / 50, 1]
 const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 export default function Home() {
   const [props, set] = useSpring(() => ({ xys: [0, 0, 1] , config: config.default}))
+
+  // Lottie animation . 
+  const container = useRef(null);
+
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: container.current,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      animationData: require('../assets/bitcoin.json')
+    });
+
+  } , [])
+
+
+
   return (
     <div>
       <Head>
@@ -18,8 +37,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon1.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"></link>
       </Head>
       <Navbar />
       <div>
@@ -132,7 +151,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex items-center justify-center -mx-4 lg:pl-8">
-          <animated.div className="flex flex-col items-end px-3"
+          {/* <animated.div className="flex flex-col items-end px-3"
             onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x, y)}))}
             onMouseLeave={() => set({xys:[0,0,1]})}
             style={{
@@ -161,8 +180,10 @@ export default function Home() {
               src="https://images.pexels.com/photos/157520/pexels-photo-157520.jpeg?cs=srgb&dl=pexels-anthony-157520.jpg&fm=jpg"
               alt=""
             />
-          </animated.div>
+          </animated.div> */}
+          <div className="container" ref={container}></div>
         </div>
+        
       </div>
     </div>
         </div>
