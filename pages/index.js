@@ -46,7 +46,7 @@ export default function Home() {
         <Header />
         
         <We />
-        <Blogs />
+        <Product />
         {/* Body of Home page */}
         {/* <div className="py-10">
           <div className="mx-auto text-center mt-10 lg:text-4xl text-purple-900 font-bold mb-5 text-3xl">
@@ -191,7 +191,8 @@ export default function Home() {
     </div>
         </div>
         
-        <Product />
+        
+        <Blogs />
         <Footer />
       </div>
     </div>
