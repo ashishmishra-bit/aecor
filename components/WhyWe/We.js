@@ -1,11 +1,27 @@
 import Image from "next/image";
 import { useSpring, animated, config } from 'react-spring';
-
+import lottie from 'lottie-web';
+import { useEffect , useRef } from 'react';
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 50, (x - window.innerWidth / 2) / 50, 1]
 const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 const We = () => {
   const [props, set] = useSpring(() => ({ xys: [0, 0, 1] , config: config.default}))
+
+
+  const container = useRef(null);
+
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: container.current,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      animationData: require('../../assets/finance.json')
+    });
+
+  } , [])
+
   return (
     // <div className=" overflow-x-hidden">
     //     <div className="absolute lg:mt-60 lg:ml-10 mt-10 ml-5">
@@ -206,11 +222,12 @@ Leading online trading platforms for traders, investors, and advisors, providing
           </div>
         </div>
         <div>
-          <img
+          {/* <img
             className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
             src="https://images.pexels.com/photos/6802042/pexels-photo-6802042.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
             alt=""
-          />
+          /> */}
+          <div className="container" ref={container}></div>
         </div>
       </div>
     </div>

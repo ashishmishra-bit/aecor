@@ -150,7 +150,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="flex items-center justify-center -mx-4 lg:pl-8">
+        <div className="flex items-center justify-center -mx-4 lg:pl-8 ">
           {/* <animated.div className="flex flex-col items-end px-3"
             onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x, y)}))}
             onMouseLeave={() => set({xys:[0,0,1]})}
