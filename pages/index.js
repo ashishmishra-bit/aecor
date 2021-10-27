@@ -7,29 +7,34 @@ import Image from "next/image";
 import Footer from "../components/Footer/Footer";
 import We from "../components/WhyWe/We";
 import Blogs from "../components/Blog/blog";
-import { useSpring, animated, config } from 'react-spring';
-import lottie from 'lottie-web';
-import { useEffect , useRef } from 'react';
-const calc = (x, y) => [-(y - window.innerHeight / 2) / 50, (x - window.innerWidth / 2) / 50, 1]
-const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+import { useSpring, animated, config } from "react-spring";
+import lottie from "lottie-web";
+import { useEffect, useRef } from "react";
+const calc = (x, y) => [
+  -(y - window.innerHeight / 2) / 50,
+  (x - window.innerWidth / 2) / 50,
+  1,
+];
+const trans = (x, y, s) =>
+  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 export default function Home() {
-  const [props, set] = useSpring(() => ({ xys: [0, 0, 1] , config: config.default}))
+  const [props, set] = useSpring(() => ({
+    xys: [0, 0, 1],
+    config: config.default,
+  }));
 
-  // Lottie animation . 
+  // Lottie animation .
   const container = useRef(null);
 
   useEffect(() => {
     lottie.loadAnimation({
       container: container.current,
-      renderer: 'svg',
+      renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: require('../assets/bitcoin.json')
+      animationData: require("../assets/bitcoin.json"),
     });
-
-  } , [])
-
-
+  }, []);
 
   return (
     <div>
@@ -37,14 +42,17 @@ export default function Home() {
         <title>Aecor</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon1.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <Navbar />
       <div>
         <Header />
-        
+
         <We />
         <Product />
         {/* Body of Home page */}
@@ -74,87 +82,87 @@ export default function Home() {
           </div>
         </div> */}
 
-        <div>
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="grid gap-10 lg:grid-cols-2">
-        <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
-          <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-purple-700">
-            <svg className="text-white w-7 h-7" viewBox="0 0 24 24">
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                points=" 8,5 8,1 16,1 16,5"
-                strokeLinejoin="round"
-              />
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                points="9,15 1,15 1,5 23,5 23,15 15,15"
-                strokeLinejoin="round"
-              />
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                points="22,18 22,23 2,23 2,18"
-                strokeLinejoin="round"
-              />
-              <rect
-                x="9"
-                y="13"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                width="6"
-                height="4"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
-          <div className="max-w-xl mb-6">
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-purple-800 sm:text-4xl sm:leading-none">
-              Let us handle
-              <br className="hidden md:block" />
-              your next{' '}
-              <span className="inline-block text-deep-purple-accent-400">
-                destination
-              </span>
-            </h2>
-            <p className="text-base text-gray-500 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae. explicabo.
-            </p>
-          </div>
-          <div>
-            <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-purple-800"
-            >
-              Learn more
-              <svg
-                className="inline-block w-3 ml-2"
-                fill="currentColor"
-                viewBox="0 0 12 12"
-              >
-                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div className="flex items-center justify-center -mx-4 lg:pl-8 ">
-          {/* <animated.div className="flex flex-col items-end px-3"
+        <div className = "lg:-mt-36">
+          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div className="grid gap-10 lg:grid-cols-2">
+              <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
+                <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-purple-700">
+                  <svg className="text-white w-7 h-7" viewBox="0 0 24 24">
+                    <polyline
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeMiterlimit="10"
+                      points=" 8,5 8,1 16,1 16,5"
+                      strokeLinejoin="round"
+                    />
+                    <polyline
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeMiterlimit="10"
+                      points="9,15 1,15 1,5 23,5 23,15 15,15"
+                      strokeLinejoin="round"
+                    />
+                    <polyline
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeMiterlimit="10"
+                      points="22,18 22,23 2,23 2,18"
+                      strokeLinejoin="round"
+                    />
+                    <rect
+                      x="9"
+                      y="13"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeMiterlimit="10"
+                      width="6"
+                      height="4"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div className="max-w-xl mb-6">
+                  <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-purple-800 sm:text-4xl sm:leading-none">
+                    Let us handle
+                    <br className="hidden md:block" />
+                    your next{" "}
+                    <span className="inline-block text-deep-purple-accent-400">
+                      destination
+                    </span>
+                  </h2>
+                  <p className="text-base text-gray-500 md:text-lg">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae. explicabo.
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="/"
+                    aria-label=""
+                    className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-purple-800"
+                  >
+                    Learn more
+                    <svg
+                      className="inline-block w-3 ml-2"
+                      fill="currentColor"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center justify-center -mx-4 lg:pl-8 ">
+                {/* <animated.div className="flex flex-col items-end px-3"
             onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x, y)}))}
             onMouseLeave={() => set({xys:[0,0,1]})}
             style={{
@@ -184,14 +192,12 @@ export default function Home() {
               alt=""
             />
           </animated.div> */}
-          <div className="container" ref={container}></div>
+                <div className="container" ref={container}></div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-      </div>
-    </div>
-        </div>
-        
-        
+
         <Blogs />
         <Footer />
       </div>
