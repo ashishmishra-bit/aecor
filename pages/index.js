@@ -147,9 +147,7 @@ export default function Home() {
                     </span>
                   </h2>
                   <p className="text-base text-gray-500 md:text-lg">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae. explicabo.
+                  Buy, Sell & Trade Stocks, Future and Options, Apply For IPO and more with our Extensive Services. Start trading now!
                   </p>
                 </div>
                 <div>
