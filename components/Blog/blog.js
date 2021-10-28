@@ -14,7 +14,7 @@ const blog = () => {
 
   return (
     <div>
-      <h1 data-aos="fade-right" className="px-40 text-3xl font-bold tracking-tight text-purple-800 sm:text-4xl sm:leading-none">Finkarma Bytes</h1>
+      <h1 data-aos="fade-right" className="lg:px-40 text-center text-3xl font-bold tracking-tight text-purple-800 sm:text-4xl sm:leading-none">Finkarma Bytes</h1>
       <div className="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
           <div className="overflow-hidden transition-shadow duration-300 bg-white rounded" data-aos = "fade-right">

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className={foot.footer}>
         <div className={foot.sectionOne}>
-            <div className={foot.title}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div className={foot.title}>Investment in securities is subject to market risk.</div>
             <div className="flex items-center justify-center mt-7 lg:ml-10">
                 <div className="lg:ml-6">
                     <Image src="/img/Twitter.png" width="35px" height="35px" />
@@ -22,33 +22,38 @@ const Footer = () => {
         <div className={foot.sectionTwo}>
             <div className={foot.address}>
                 <div className={foot.subTitle}>Address</div>
-                <div className={foot.Text}>xyxsaladk akmnlaj aklda</div>
-                <div className={foot.Text}>abc@gmail.com</div>
-                <div className={foot.Text}>+91-00912 378136</div>
+                <div className={foot.Text}>#2,Kewalchand Plaza,</div>
+                <div className={foot.Text}>Ambalal Green City,</div>
+                <div className={foot.Text}>Old Bye Pass Road,Vellore-632004</div>
+                <div className={foot.Text}>compliance@ambalalshares.com</div>
+                <div className={foot.Text}>(0416) 2227751-55, 2215022</div>
                 <div className={foot.button}>Open Account</div>
             </div>
             <div className={foot.links}>
-                <div className={foot.subTitle}>Links</div>
-                <div className={foot.Text}>Home</div>
-                <div className={foot.Text}>Services</div>
-                <div className={foot.Text}>Products</div>
-                <div className={foot.Text}>Portfolio</div>
-                <div className={foot.Text}>Contact Us</div>
+                <div className={foot.subTitle}>Markets</div>
+                <div className={foot.Text}>Top Gainers</div>
+                <div className={foot.Text}>Top Losers</div>
+                <div className={foot.Text}>Top Quantity</div>
+                <div className={foot.Text}>Top Value</div>
             </div>
             <div className={foot.product}>
-                <div className={foot.subTitle}>Product</div>
-                <div className={foot.Text}>EduGuru</div>
-                <div className={foot.Text}>CRM</div>
-                <div className={foot.Text}>Live Chat</div>
-                <div className={foot.Text}>Biling Software</div>
+                <div className={foot.subTitle}>Mutual Funds</div>
+                <div className={foot.Text}>Performance Tracking</div>
+                <div className={foot.Text}>Scheme Information</div>
+                <div className={foot.Text}>Best Performers</div>
             </div>
             <div className={foot.services}>
-                <div className={foot.subTitle}>Services</div>
-                <div className={foot.Text}>Software development</div>
-                <div className={foot.Text}>Cloud Hosting</div>
-                <div className={foot.Text}>Bulk Email</div>
-                <div className={foot.Text}>Bulk SMS</div>
-                <div className={foot.Text}>Email</div>
+                <div className={foot.subTitle}>Announcements</div>
+                <div className={foot.Text}>BSE Announcements</div>
+                <div className={foot.Text}>NSE Announcements</div>
+                <div className={foot.Text}>Board Meetings</div>
+                <div className={foot.Text}>Change of Name</div>
+            </div>
+            <div className={foot.services}>
+                <div className={foot.subTitle}>IPO</div>
+                <div className={foot.Text}>Issue Profiles</div>
+                <div className={foot.Text}>Basis of Allotment</div>
+                <div className={foot.Text}>Forthcoming Issues</div>
             </div>
         </div>
         <div className={foot.sectionThree}>
