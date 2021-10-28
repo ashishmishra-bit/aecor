@@ -2,8 +2,10 @@ import Image from "next/image";
 import { useSpring, animated, config } from 'react-spring';
 import lottie from 'lottie-web';
 import { useEffect , useRef } from 'react';
-const calc = (x, y) => [-(y - window.innerHeight / 2) / 50, (x - window.innerWidth / 2) / 50, 1]
-const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// const calc = (x, y) => [-(y - window.innerHeight / 2) / 50, (x - window.innerWidth / 2) / 50, 1]
+// const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 const We = () => {
   const [props, set] = useSpring(() => ({ xys: [0, 0, 1] , config: config.default}))
@@ -21,6 +23,12 @@ const We = () => {
     });
 
   } , [])
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
 
   return (
     // <div className=" overflow-x-hidden">
@@ -86,7 +94,7 @@ const We = () => {
     <> 
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-5 row-gap-10 lg:grid-cols-2">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center" data-aos="fade-right">
           <div className="max-w-xl mb-6">
             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-none">
               What makes us
@@ -221,7 +229,7 @@ Leading online trading platforms for traders, investors, and advisors, providing
             </ul>
           </div>
         </div>
-        <div>
+        <div data-aos = "slide-up">
           {/* <img
             className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
             src="https://images.pexels.com/photos/6802042/pexels-photo-6802042.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"

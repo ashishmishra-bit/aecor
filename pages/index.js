@@ -10,6 +10,8 @@ import Blogs from "../components/Blog/blog";
 import { useSpring, animated, config } from "react-spring";
 import lottie from "lottie-web";
 import { useEffect, useRef } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 50,
   (x - window.innerWidth / 2) / 50,
@@ -33,6 +35,12 @@ export default function Home() {
       loop: true,
       autoplay: true,
       animationData: require("../assets/top10stocks.json"),
+    });
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
     });
   }, []);
 
@@ -85,7 +93,7 @@ export default function Home() {
         <div className = "lg:-mt-36">
           <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="grid gap-10 lg:grid-cols-2">
-              <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
+              <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg" data-aos="fade-right">
                 <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-purple-700">
                   <svg className="text-white w-7 h-7" viewBox="0 0 24 24">
                     <polyline
@@ -161,7 +169,7 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className="flex items-center justify-center -mx-4 lg:pl-8 ">
+              <div className="flex items-center justify-center -mx-4 lg:pl-8 " data-aos="fade-left">
                 {/* <animated.div className="flex flex-col items-end px-3"
             onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x, y)}))}
             onMouseLeave={() => set({xys:[0,0,1]})}

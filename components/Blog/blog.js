@@ -1,10 +1,23 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
 const blog = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
+
   return (
     <div>
-      <h1 className="px-40 text-3xl font-bold tracking-tight text-purple-800 sm:text-4xl sm:leading-none">Finkarma Bytes</h1>
+      <h1 data-aos="fade-right" className="px-40 text-3xl font-bold tracking-tight text-purple-800 sm:text-4xl sm:leading-none">Finkarma Bytes</h1>
       <div className="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
+          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded" data-aos = "fade-right">
             <a href="https://finkarma.in/6-things-i-wish-i-knew-when-i-started-trading" aria-label="Article">
               <img
                 src="https://finkarma.in/wp-content/uploads/2021/10/mistake/main.png"
@@ -30,7 +43,7 @@ const blog = () => {
               </p>
             </div>
           </div>
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
+          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded" data-aos="zoom-in">
             <a href="https://finkarma.in/peg-ratio-a-refinement-over-pe" aria-label="Article">
               <img
                 src="https://finkarma.in/wp-content/uploads/2021/10/peg/word-image.jpeg"
@@ -57,7 +70,7 @@ const blog = () => {
                
             </div>
           </div>
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
+          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded" data-aos = "fade-left">
             <a href="https://finkarma.in/the-psychological-edge-in-trading" aria-label="Article">
               <img
                 src="https://finkarma.in/wp-content/uploads/2021/10/edge/word-image.png"

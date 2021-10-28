@@ -1,114 +1,13 @@
-import Link from 'next/link';
-
+import Link from "next/link";
+import React from "react";
+// toggle component.
+import { useState } from "react";
 const signUp = () => {
-    return (
-        // <div>
-        //     <div className="formBox overflow-x-hidden" >
-        //         <div className = "btnBox">
-        //             <div id="btn"></div>
-        //             <button type="button" className="toggle-btn" >Sign Up</button>
-        //             <Link href="/">
-        //             <button type="button" className="toggle-btn">home</button>
-        //             </Link>
-        //         </div>
-        //         <form id = "register" className = "inputGrp">
-        //         <input type="text" placeholder="Name" className="inputField" required />
-        //             <input type="email" placeholder="E-mail" className="inputField" required />
-        //             <input type="text" placeholder="Phone Number" className="inputField" required />
-        //             <input type="checkbox" className="checkBox"/><span>I agreed to T&C</span>
-        //             <button type="submit" className="submitBtn">SignUp</button>
-        //         </form>
-        //         <h1 className="text-center text-2xl" >Open a new account</h1>
-        //     </div>
-        
-           
+  const [showModal, setShowModal] = React.useState(false);
 
-        //     <style jsx>{`
-        //         .formBox{
-        //             width:380px;
-        //             height:500px;
-        //             position:relative;
-        //             margin:6% auto;
-        //             background:#fff;
-        //             padding:5px;
-        //         }
-        //         .btnBox{
-        //             width:220px;
-        //             margin:35px auto;
-        //             position:relative;
-        //             box-shadow:0 0 20px 9px #A3E2FD;
-        //             border-radius:30px;
-        //         }
-        //         .toggle-btn{
-        //             padding:10px 30px;
-        //             cursor:pointer;
-        //             background:transparent;
-        //             border:0;
-        //             outline:none;
-        //             position:relative;
-        //         }
-        //         #btn{
-        //             top:0;
-        //             left:0;
-        //             position:absolute;
-        //             width:110px;
-        //             height:100%;
-        //             background:linear-gradient(to right , #20BDFF, #A5FECB);
-        //             border-radius:30px;
-        //             transition:all 0.5s;
-        //         }
-        //         .inputGrp{
-        //             top:180px;
-        //             position:absolute;
-        //             width:280px;
-        //             transition:all 0.5s;
-        //         }
-        //         .inputField{
-        //             width:100%;
-        //             padding:10px 0;
-        //             margin:5px 0;
-        //             border-left:0;
-        //             border-right:0;
-        //             border-top:0;
-        //             border-bottom:1px solid #999;
-        //             outline:none;
-        //             backround:transparent;
-        //         }
-        //         .checkBox{
-        //             margin: 30px, 10px ,30px,0;
-        //         }
-        //         .submitBtn{
-        //             width:85%;
-        //             padding:10px 30px;
-        //             cursor:pointer;
-        //             display:block;
-        //             margin:auto;
-        //             background:linear-gradient(to right , #20BDFF, #A5FECB);
-        //             border-radius:30px;
-        //             border:0;
-        //             outline:none;
-        //         }
-        //         span{
-        //             font-size:12px;
-        //             color:#777;
-        //             bottom:68px;
-        //             // position:absolute;
-        //         }
-        //         #register{
-        //             left:50px;
-        //         }
-        //         @media (min-width:360px){
-        //             .formBox{                        
-        //                 width:350px;
-        //             }
-        //         }
-                
-
-        //     `}</style>
-        // </div>
-
-        <> 
-            <div className="relative flex flex-col-reverse px-4 py-20 mx-auto lg:block lg:flex-col lg:py-32  md:px-8 sm:max-w-xl md:max-w-full">
+  return (
+    <>
+      <div className="relative flex flex-col-reverse px-4 py-20 mx-auto lg:block lg:flex-col lg:py-32  md:px-8 sm:max-w-xl md:max-w-full">
         <div className="z-0 flex justify-center h-full -mx-4 overflow-hidden lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center">
           <img
             src="https://kitwind.io/assets/kometa/laptop.png"
@@ -127,7 +26,7 @@ const signUp = () => {
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                 We will bring your
                 <br className="hidden md:block" />
-                business{' '}
+                business{" "}
                 <span className="inline-block text-deep-purple-accent-400">
                   online
                 </span>
@@ -152,26 +51,24 @@ const signUp = () => {
                   type="email"
                   className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                 />
-                
               </div>
               <div className="flex flex-col md:flex-row">
-                
                 <input
                   placeholder="Phone Number"
                   required=""
                   type="number"
                   className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                 />
-                
               </div>
               <div className="flex items-center mt-4">
                 <button
-                  type="submit"
+                  type="button"
                   className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-700 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                  onClick={() => setShowModal(true)}
                 >
                   Sign Up
                 </button>
-                
+
                 <a
                   href="/"
                   aria-label=""
@@ -179,20 +76,130 @@ const signUp = () => {
                 >
                   Back
                 </a>
-                
               </div>
-              <p className="text-md mt-5">Already have an Account ? <a href="/login" className = "hover:underline hover:text-purple-700 cursor:pointer">Login</a></p> 
+              <p className="text-md mt-5">
+                Already have an Account ?{" "}
+                <a
+                  href="/login"
+                  className="hover:underline hover:text-purple-700 cursor:pointer"
+                >
+                  Login
+                </a>
+              </p>
             </form>
           </div>
         </div>
       </div>
-        
+
+      {/* Modal */}
+      {/* {showModal ? (
+        <>
+          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+             
+              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+               
+                <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
+                  
+                  <img src = "/img/logo.png"/>
+                  <button
+                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                    onClick={() => setShowModal(false)}
+                  >
+                    <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                      ×
+                    </span>
+                  </button>
+                </div>
+                
+                <div className="relative p-6 flex-auto">     
 
 
-        {/* Terms & Condition section */}
+                  <div class="bg-white h-64 py-3 rounded text-center">
+                    <h1 class="text-2xl font-bold">OTP Verification</h1>
+                    <div class="flex flex-col mt-4">
+                      {" "}
+                      <span>Enter the OTP you received at</span>{" "}
+                      <span class="font-bold">+91 ******876</span>{" "}
+                    </div>
+                    <div
+                      id="otp"
+                      class="flex flex-row justify-center text-center px-2 mt-5"
+                    >
+                      {" "}
+                      <input
+                        class="m-2 border h-10 w-10 text-center form-control rounded"
+                        type="text"
+                        id="first"
+                        maxlength="1"
+                      />{" "}
+                      <input
+                        class="m-2 border h-10 w-10 text-center form-control rounded"
+                        type="text"
+                        id="second"
+                        maxlength="1"
+                      />{" "}
+                      <input
+                        class="m-2 border h-10 w-10 text-center form-control rounded"
+                        type="text"
+                        id="third"
+                        maxlength="1"
+                      />{" "}
+                      <input
+                        class="m-2 border h-10 w-10 text-center form-control rounded"
+                        type="text"
+                        id="fourth"
+                        maxlength="1"
+                      />{" "}
+                      <input
+                        class="m-2 border h-10 w-10 text-center form-control rounded"
+                        type="text"
+                        id="fifth"
+                        maxlength="1"
+                      />{" "}
+                      <input
+                        class="m-2 border h-10 w-10 text-center form-control rounded"
+                        type="text"
+                        id="sixth"
+                        maxlength="1"
+                      />{" "}
+                    </div>
+                    <div class="flex justify-center text-center mt-5">
+                      {" "}
+                      <a class="flex items-center text-blue-700 hover:text-blue-900 cursor-pointer">
+                        <span class="font-bold">Resend OTP</span>
+                        <i class="bx bx-caret-right ml-1"></i>
+                      </a>{" "}
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                  <button
+                    className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    type="button"
+                    onClick={() => setShowModal(false)}
+                  >
+                    Close
+                  </button>
+                  <button
+                    className="bg-green-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    type="button"
+                    onClick={() => setShowModal(false)}
+                  >
+                    Verify OTP
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+        </>
+      ) : null} */}
 
+      {/* Terms & Condition section */}
 
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <div className="bg-green-300 w-36 h-7 rounded-full mx-auto">
             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
@@ -220,7 +227,7 @@ const signUp = () => {
                 <rect
                   fill="url(#27df4f81-c854-45de-942a-fe90f7a300f9)"
                   width="52"
-                  height="24"                  
+                  height="24"
                 />
               </svg>
               <span className="relative text-purple-900">The</span>
@@ -252,9 +259,7 @@ const signUp = () => {
               </div>
             </div>
             <div>
-              <h6 className="mb-3 text-xl  leading-5 font-extrabold">
-                Stock
-              </h6>
+              <h6 className="mb-3 text-xl  leading-5 font-extrabold">Stock</h6>
               <p className="mb-3 text-sm text-gray-600">
                 A flower in my garden, a mystery in my panties. Heart attack
                 never stopped old Big Bear. I didn't even know we were calling
@@ -288,9 +293,7 @@ const signUp = () => {
               </div>
             </div>
             <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">
-                Mutual Funds
-              </h6>
+              <h6 className="mb-3 text-xl font-bold leading-5">Mutual Funds</h6>
               <p className="mb-3 text-sm text-gray-600">
                 Rough pomfret lemon shark plownose chimaera southern sandfish
                 kokanee northern sea robin Antarctic cod. Yellow-and-black
@@ -362,9 +365,7 @@ const signUp = () => {
               </div>
             </div>
             <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">
-                DP Services
-              </h6>
+              <h6 className="mb-3 text-xl font-bold leading-5">DP Services</h6>
               <p className="mb-3 text-sm text-gray-600">
                 Disrupt inspire and think tank, social entrepreneur but
                 preliminary thinking think tank compelling. Inspiring, invest
@@ -456,9 +457,8 @@ const signUp = () => {
           </div>
         </div>
       </div>
+    </>
+  );
+};
 
-        </>
-    )
-}
-
-export default signUp
+export default signUp;
