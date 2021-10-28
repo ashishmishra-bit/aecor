@@ -76,8 +76,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.copyright,
-.privacy,.term{
+.copyright{
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -85,12 +84,6 @@
     letter-spacing: 0em;
     text-align: left;
     color: white!important;
-}
-.privacy{
-    margin-right: 20px;
-}
-.term{
-    margin-left: 20px;
 }
 @media (max-width: 600px) {
     .footer{

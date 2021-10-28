@@ -1,5 +1,6 @@
 import foot from './Footer.module.css';
 import Image from "next/image";
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -52,10 +53,12 @@ const Footer = () => {
         </div>
         <div className={foot.sectionThree}>
             <div className={foot.copyright}>© 2020 All Rights Reserved ​</div>
-            <div className="inline-flex">
-                <div className={foot.privacy}>Privacy Policy ​</div> 
+            <div className="inline-flex text-white">
+                <div className="mr-5"><Link href="/Privacy">Privacy Policy ​</Link></div>
+                
                 <div className="text-white">|</div>
-                <div className={foot.term}>Terms Of Use ​</div>
+
+                <div className="ml-5"><Link href="/Terms" className={foot.term}>Terms Of Use ​</Link></div>
             </div>
         </div>
     </div>
