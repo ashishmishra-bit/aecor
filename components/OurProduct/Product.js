@@ -56,7 +56,7 @@ const Product = () => {
 
     <>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div data-aos="zoom-in" className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        <div  className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <div className="bg-green-300 w-28 h-7 rounded-full mx-auto">
             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
               Brand new
@@ -114,7 +114,7 @@ const Product = () => {
                 </svg>
               </div>
             </div>
-            <div data-aos="fade-right">
+            <div >
               <h6 className="mb-3 text-xl  leading-5 font-extrabold">Stock</h6>
               <p className="mb-3 text-sm text-gray-600">
                 A flower in my garden, a mystery in my panties. Heart attack
@@ -148,7 +148,7 @@ const Product = () => {
                 </svg>
               </div>
             </div>
-            <div data-aos="fade-left">
+            <div >
               <h6 className="mb-3 text-xl font-bold leading-5">Mutual Funds</h6>
               <p className="mb-3 text-sm text-gray-600">
                 Rough pomfret lemon shark plownose chimaera southern sandfish
@@ -183,7 +183,7 @@ const Product = () => {
                 </svg>
               </div>
             </div>
-            <div data-aos = "fade-right">
+            <div >
               <h6 className="mb-3 text-xl font-bold leading-5">
                 Currency Booking
               </h6>
@@ -220,7 +220,7 @@ const Product = () => {
                 </svg>
               </div>
             </div>
-            <div data-aos = "fade-left">
+            <div >
               <h6 className="mb-3 text-xl font-bold leading-5">DP Services</h6>
               <p className="mb-3 text-sm text-gray-600">
                 Disrupt inspire and think tank, social entrepreneur but
@@ -255,7 +255,7 @@ const Product = () => {
                 </svg>
               </div>
             </div>
-            <div data-aos = "fade-right">
+            <div >
               <h6 className="mb-3 text-xl font-bold leading-5">
                 Commodities Broking
               </h6>
@@ -292,7 +292,7 @@ const Product = () => {
                 </svg>
               </div>
             </div>
-            <div data-aos = "fade-left">
+            <div >
               <h6 className="mb-3 text-xl font-bold leading-5">
                 PAN / TIN / TDS Services
               </h6>
@@ -313,7 +313,7 @@ const Product = () => {
           </div>
           
         </div>
-        <div data-aos="zoom-in" className="flex items-center justify-center pt-10">
+        <div  className="flex items-center justify-center pt-10">
             <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-purple-500 text-purple-700 text-lg rounded-lg hover:bg-purple-500 hover:text-white ">
               View More Services
             </button>

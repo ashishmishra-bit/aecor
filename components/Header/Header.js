@@ -59,6 +59,7 @@ const Header = () => {
             </h2>
             <p className="pr-5 mb-5 text-base text-gray-500 md:text-lg">
               Stay on top of the market with our innovative technology, extensive product access, award-winning education, and specialized service.
+            
             </p>
             <div className="flex items-center">
               <a
