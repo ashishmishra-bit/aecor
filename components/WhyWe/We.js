@@ -17,7 +17,7 @@ const We = () => {
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      animationData: require('../../assets/finance.json')
+      animationData: require('../../assets/business-deal.json')
     });
 
   } , [])
