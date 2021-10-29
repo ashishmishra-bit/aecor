@@ -99,21 +99,30 @@ const Item = ({ title, children }) => {
             </div>
           </div>
           <div className="space-y-4 text-purple-900" >
-            <Item title="The quick, brown fox jumps over a lazy dog?">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque rem aperiam, eaque ipsa quae.
+            <Item title="What is Demat Account?">
+A demat account is an account to hold financial securities in electronic form. In India, demat accounts are maintained by two depository organisations NSDL and CDSL.
             </Item>
-            <Item title="The first mate and his Skipper too will do?">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque rem aperiam, eaque ipsa quae.
+            <Item title="What are document required on Aecor?">
+            The documents required on Aecor
+            
+            <ul>
+            <li>Aadhar card</li>
+            <li>Pan card</li>
+            <li>Passport Size Picture</li>
+            <li>Bank Details</li>
+            <li>ITR Latest</li>
+            <li>Place of Birth and Mothers Name</li>
+            <li>Signature (on white Paper)</li>
+            </ul>
+
+            
             </Item>
             <Item title="Is the Space Pope reptilian!?">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque rem aperiam, eaque ipsa quae.
             </Item>
-            <Item title="How much money you got on you?">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque rem aperiam, eaque ipsa quae.
+            <Item title="Do I need a demat account for Mutual Funds?">
+              Demat account is not required for mutual funds.
             </Item>
           </div>
         </div>
