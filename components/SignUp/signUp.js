@@ -1,9 +1,23 @@
 import Link from "next/link";
 import React from "react";
 // toggle component.
-import { useState } from "react";
+import swal from 'sweetalert';
+
+import { Faq } from "../Faq/Faq";
 const signUp = () => {
   const [showModal, setShowModal] = React.useState(false);
+  // submitOTP = () => {
+  //   alert("You Are Verified 👍");
+  // }
+  function submitOTP(e) {
+    e.preventDefault();
+    // alert("You Are Verified 👍");
+    swal({
+      icon: "success",
+      title: "Good job!",
+      text: "You Are Verified"
+    });
+  }
 
   return (
     <>
@@ -185,7 +199,7 @@ const signUp = () => {
                   <button
                     className="bg-green-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
-                    onClick={() => setShowModal(false)}
+                    onClick={submitOTP}
                   >
                     Verify OTP
                   </button>
@@ -380,83 +394,12 @@ const signUp = () => {
                 Learn more
               </a>
             </div>
-          </div>
-          <div className="flex flex-col max-w-md sm:mx-auto sm:flex-row">
-            <div className="mr-4">
-              <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-                <svg
-                  className="w-10 h-10 text-purple-600"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">
-                Commodities Broking
-              </h6>
-              <p className="mb-3 text-sm text-gray-600">
-                Disrupt inspire and think tank, social entrepreneur but
-                preliminary thinking think tank compelling. Inspiring, invest
-                synergy capacity building, white paper; silo, unprecedented
-                challenge B-corp problem-solvers.
-              </p>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-700 hover:text-purple-900"
-              >
-                Learn more
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-col max-w-md sm:mx-auto sm:flex-row">
-            <div className="mr-4">
-              <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-                <svg
-                  className="w-10 h-10 text-purple-600"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">
-                PAN / TIN / TDS Services
-              </h6>
-              <p className="mb-3 text-sm text-gray-600">
-                Disrupt inspire and think tank, social entrepreneur but
-                preliminary thinking think tank compelling. Inspiring, invest
-                synergy capacity building, white paper; silo, unprecedented
-                challenge B-corp problem-solvers.
-              </p>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-700 hover:text-purple-900"
-              >
-                Learn more
-              </a>
-            </div>
-          </div>
+          </div>          
+          
         </div>
       </div>
+        <Faq/>
+     
 
       {/* <style jsx>{`
         #modalPopUP{
