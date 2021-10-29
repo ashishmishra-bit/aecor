@@ -29,13 +29,8 @@ const Footer = () => {
                 <div className={foot.Text}>(0416) 2227751-55, 2215022</div>
                 <div className={foot.button}>Open Account</div>
             </div>
-            <div className={foot.links}>
-                <div className={foot.subTitle}>Markets</div>
-                <div className={foot.Text}>Top Gainers</div>
-                <div className={foot.Text}>Top Losers</div>
-                <div className={foot.Text}>Top Quantity</div>
-                <div className={foot.Text}>Top Value</div>
-            </div>
+
+
             <div className={foot.product}>
                 <div className={foot.subTitle}>Mutual Funds</div>
                 <div className={foot.Text}>Performance Tracking</div>

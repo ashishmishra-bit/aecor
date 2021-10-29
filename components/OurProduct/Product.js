@@ -88,11 +88,10 @@ const Product = () => {
               </svg>
               <span className="relative text-purple-900">The</span>
             </span>{" "}
-            Data to enrich your online business
+           Services to enrich you on your investing journey.
           </h2>
           <p className="text-base text-gray-500 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+            Investing in the Indian Market It's never been this simple.
           </p>
         </div>
         <div className="grid max-w-screen-lg gap-8 row-gap-10 mx-auto lg:grid-cols-2">
@@ -117,9 +116,7 @@ const Product = () => {
             <div >
               <h6 className="mb-3 text-xl  leading-5 font-extrabold">Stock</h6>
               <p className="mb-3 text-sm text-gray-600">
-                A flower in my garden, a mystery in my panties. Heart attack
-                never stopped old Big Bear. I didn't even know we were calling
-                him Big Bear. We never had the chance to.
+To begin trading/investing in stocks, you must first open a Demat account. You can open a Stock Trading account with Aecor using digital KYC and least documentation.
               </p>
               <a
                 href="/"
@@ -151,10 +148,7 @@ const Product = () => {
             <div >
               <h6 className="mb-3 text-xl font-bold leading-5">Mutual Funds</h6>
               <p className="mb-3 text-sm text-gray-600">
-                Rough pomfret lemon shark plownose chimaera southern sandfish
-                kokanee northern sea robin Antarctic cod. Yellow-and-black
-                triplefin gulper South American Lungfish mahi-mahi,
-                butterflyfish glass catfish soapfish ling gray mullet!
+              Aecor Online Mutual Fund offers a comprehensive guide to investing in Mutual Funds in India. To learn about Top Performing Mutual Funds,  Best Mutual Funds to Buy  and so on.
               </p>
               <a
                 href="/"
@@ -185,13 +179,10 @@ const Product = () => {
             </div>
             <div >
               <h6 className="mb-3 text-xl font-bold leading-5">
-                Currency Booking
+                Currency Trading
               </h6>
               <p className="mb-3 text-sm text-gray-600">
-                A slice of heaven. O for awesome, this chocka full cuzzie is as
-                rip-off as a cracker. Meanwhile, in behind the bicycle shed,
-                Hercules Morse, as big as a horse and Mrs Falani were up to no
-                good with a bunch of crook pikelets.
+                   Aecor allows you to trade in Currency. With your Aecor Trading account, you can access all Currency pairs using a wide range of charts and indicators.
               </p>
               <a
                 href="/"
@@ -221,12 +212,9 @@ const Product = () => {
               </div>
             </div>
             <div >
-              <h6 className="mb-3 text-xl font-bold leading-5">DP Services</h6>
+              <h6 className="mb-3 text-xl font-bold leading-5">IPO Services</h6>
               <p className="mb-3 text-sm text-gray-600">
-                Disrupt inspire and think tank, social entrepreneur but
-                preliminary thinking think tank compelling. Inspiring, invest
-                synergy capacity building, white paper; silo, unprecedented
-                challenge B-corp problem-solvers.
+Set up an trading account to invest in a company through an Initial Public Offering (IPO).
               </p>
               <a
                 href="/"
@@ -257,13 +245,10 @@ const Product = () => {
             </div>
             <div >
               <h6 className="mb-3 text-xl font-bold leading-5">
-                Commodities Broking
+                Commodities Trading
               </h6>
               <p className="mb-3 text-sm text-gray-600">
-                Disrupt inspire and think tank, social entrepreneur but
-                preliminary thinking think tank compelling. Inspiring, invest
-                synergy capacity building, white paper; silo, unprecedented
-                challenge B-corp problem-solvers.
+Gain access to data, insights and analysis across all aspects of the commodity markets with Aecor trading Platform. 
               </p>
               <a
                 href="/"
@@ -294,13 +279,10 @@ const Product = () => {
             </div>
             <div >
               <h6 className="mb-3 text-xl font-bold leading-5">
-                PAN / TIN / TDS Services
+                API Access
               </h6>
               <p className="mb-3 text-sm text-gray-600">
-                Disrupt inspire and think tank, social entrepreneur but
-                preliminary thinking think tank compelling. Inspiring, invest
-                synergy capacity building, white paper; silo, unprecedented
-                challenge B-corp problem-solvers.
+Connect your app to Aecor's lightning-fast API. With the shortest response time and the quickest execution.
               </p>
               <a
                 href="/"

@@ -7,17 +7,17 @@ const blog = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 100,
     });
   }, []);
 
 
   return (
     <div>
-      <h1 data-aos="fade-right" className="lg:px-40 text-center text-3xl font-bold tracking-tight text-purple-800 sm:text-4xl sm:leading-none">Finkarma Bytes</h1>
+      <h1  className="lg:px-40 text-center text-3xl font-bold tracking-tight text-purple-800 sm:text-4xl sm:leading-none">Finkarma Bytes</h1>
       <div className="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded" data-aos = "fade-right">
+          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded" >
             <a href="https://finkarma.in/denial-by-insurer-time-to-call-ombudsman" aria-label="Article">
               <img
                 src="https://finkarma.in/wp-content/uploads/2021/05/Insurance-scaled-e1622290972646-1024x512.jpg"
@@ -43,7 +43,7 @@ const blog = () => {
               </p>
             </div>
           </div>
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded" data-aos="zoom-in">
+          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded" >
             <a href="https://finkarma.in/discipline-your-way-to-trading-success" aria-label="Article">
               <img
                 src="https://finkarma.in/wp-content/uploads/2021/04/Success_01-scaled-e1617622822684-1024x640.jpg"
@@ -70,7 +70,7 @@ const blog = () => {
                
             </div>
           </div>
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded" data-aos = "fade-left">
+          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded" >
             <a href="https://finkarma.in/understanding-price-to-earnings-ratio-in-the-most-simplistic-manner" aria-label="Article">
               <img
                 src="https://finkarma.in/wp-content/uploads/2021/01/photo_2021-01-15_19-58-44-1-e1610726733456-1024x546.jpg"
