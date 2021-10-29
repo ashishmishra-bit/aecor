@@ -4,19 +4,19 @@ const Item = ({ title, children }) => {
     const [isOpen, setIsOpen] = useState(false);
   
     return (
-      <div classNameName="border rounded shadow-sm">
+      <div className="border rounded shadow-sm">
         <button
           type="button"
           aria-label="Open item"
           title="Open item"
-          classNameName="flex items-center justify-between w-full p-4 focus:outline-none"
+          className="flex items-center justify-between w-full p-4 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <p classNameName="text-lg font-medium">{title}</p>
-          <div classNameName="flex items-center justify-center w-8 h-8 border rounded-full">
+          <p className="text-lg font-medium">{title}</p>
+          <div className="flex items-center justify-center w-8 h-8 border rounded-full">
             <svg
               viewBox="0 0 24 24"
-              classNameName={`w-3 text-gray-600 transition-transform duration-200 ${
+              className={`w-3 text-gray-600 transition-transform duration-200 ${
                 isOpen ? 'transform rotate-180' : ''
               }`}
             >
@@ -33,8 +33,8 @@ const Item = ({ title, children }) => {
           </div>
         </button>
         {isOpen && (
-          <div classNameName="p-4 pt-0">
-            <p classNameName="text-gray-500">{children}</p>
+          <div className="p-4 pt-0">
+            <p className="text-gray-500">{children}</p>
           </div>
         )}
       </div>
