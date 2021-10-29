@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {  useState } from 'react';
 import React from "react";
 // toggle component.
 import swal from 'sweetalert';
@@ -18,6 +19,31 @@ const signUp = () => {
       text: "Your Response has been submitted"
     });
   }
+
+  // Backend
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [mobile, setMobile] = useState('');
+  const [isPending, setIsPending] =useState(false);
+
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+    const data = { email:email,name:name, mobile:mobile };
+
+    setIsPending(true);
+
+    fetch('',{
+        method: 'POST',
+        headers: { "content-Type" : "application/json" },
+        body: JSON.stringify(data)
+    }).then(()=>{
+        console.log('new data added');
+        alert("🎉You have Successfully Subscribed🎉");
+        setIsPending(false);
+      });
+    e.target.reset();
+}
 
   return (
     <>
@@ -46,20 +72,24 @@ const signUp = () => {
                 </span>
               </h2>
               <p className="text-base text-gray-700 md:text-lg">
-Open a free Demat account online with Aecor and enjoy a completely paperless online Demat account opening experience with no annual maintenance fees.
+                Open a free Demat account online with Aecor and enjoy a completely paperless online Demat account opening experience with no annual maintenance fees.
               </p>
             </div>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="flex flex-col md:flex-row">
                 <input
                   placeholder="Name"
-                  required=""
+                  required
+                  value={name}
+                  onChange={(e)=> setName(e.target.value)}
                   type="text"
                   className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                 />
                 <input
                   placeholder="Email"
-                  required=""
+                  required
+                  value={email}
+                  onChange={(e)=> setEmail(e.target.value)}
                   type="email"
                   className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                 />
@@ -67,7 +97,9 @@ Open a free Demat account online with Aecor and enjoy a completely paperless on
               <div className="flex flex-col md:flex-row">
                 <input
                   placeholder="Phone Number"
-                  required=""
+                  required
+                  value={mobile}
+                  onChange={(e)=> setMobile(e.target.value)}
                   type="number"
                   className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                 />
