@@ -1,9 +1,22 @@
 import Link from "next/link";
 import React from "react";
 // toggle component.
+import swal from 'sweetalert';
 import { useState } from "react";
 const signUp = () => {
   const [showModal, setShowModal] = React.useState(false);
+  // submitOTP = () => {
+  //   alert("You Are Verified 👍");
+  // }
+  function submitOTP(e) {
+    e.preventDefault();
+    // alert("You Are Verified 👍");
+    swal({
+      icon: "success",
+      title: "Good job!",
+      text: "You Are Verified"
+    });
+  }
 
   return (
     <>
@@ -185,7 +198,7 @@ const signUp = () => {
                   <button
                     className="bg-green-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
-                    onClick={() => setShowModal(false)}
+                    onClick={submitOTP}
                   >
                     Verify OTP
                   </button>
