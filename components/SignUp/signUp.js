@@ -13,8 +13,8 @@ const signUp = () => {
     // alert("You Are Verified 👍");
     swal({
       icon: "success",
-      title: "Good job!",
-      text: "You Are Verified"
+      title: "Thanks!",
+      text: "Your Response has been submitted"
     });
   }
 
@@ -37,17 +37,15 @@ const signUp = () => {
                 </p>
               </div>
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                We will bring your
+                Open a free
                 <br className="hidden md:block" />
-                business{" "}
+                
                 <span className="inline-block text-deep-purple-accent-400">
-                  online
+                  Demat Account
                 </span>
               </h2>
               <p className="text-base text-gray-700 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae. explicabo.
+Open a free Demat account online with Aecor and enjoy a completely paperless online Demat account opening experience with no annual maintenance fees.
               </p>
             </div>
             <form>
