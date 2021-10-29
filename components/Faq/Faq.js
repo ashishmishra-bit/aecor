@@ -103,17 +103,16 @@ const Item = ({ title, children }) => {
 A demat account is an account to hold financial securities in electronic form. In India, demat accounts are maintained by two depository organisations NSDL and CDSL.
             </Item>
             <Item title="What are document required on Aecor?">
-            The documents required on Aecor
-            
+            <b>The documents required on Aecor</b>            
             <ul>
-            <li>Aadhar card</li>
-            <li>Pan card</li>
-            <li>Passport Size Picture</li>
-            <li>Bank Details</li>
-            <li>ITR Latest</li>
-            <li>Place of Birth and Mothers Name</li>
-            <li>Signature (on white Paper)</li>
-            </ul>
+            <li>• Aadhar card</li>
+            <li>• Pan card</li>
+            <li>• Passport Size Picture</li>
+            <li>• Bank Details</li>
+            <li>• ITR Latest</li>
+            <li>• Place of Birth and Mothers Name</li>
+            <li>• Signature (on white Paper)</li>
+            </ul>        
 
             
             </Item>
