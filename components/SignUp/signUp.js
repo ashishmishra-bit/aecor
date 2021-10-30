@@ -103,24 +103,24 @@ const signUp = () => {
                 />
               </div>
               <div className="flex flex-col md:flex-row">
-                {/* <input
+                <input
                   placeholder="Phone Number"
                   required
                   value={mobile}
                   onChange={(e) => setMobile(e.target.value)}
-                  type="number"
+                  type="text"
                   label="Enter Valid Phone Number with country code "
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"
                   maxLength="12"
                   className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                /> */}
+                />
                 {/* <PhoneInput className = "focus:border-purple-400 w-full  flex-grow h-12 w-2"
       placeholder="Enter phone number"
       value={value}
       onChange={setValue}/> */}
-      <div className="w-full ">
+      {/* <div className="w-full ">
       <Phone/>
-      </div>
+      </div> */}
               </div>
               {/* <Phone/> */}
               <div className="flex items-center mt-4">
