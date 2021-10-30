@@ -40,7 +40,7 @@ const Header = () => {
           </svg>
           <img
             className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-            src="/img/HeaderImage.png "
+            src="https://finkarma.b-cdn.net/wp-content/uploads/aecor/img/HeaderImage.png"
             alt=""
           />
         </div>

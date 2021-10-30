@@ -1,11 +1,18 @@
 import Link from "next/link";
-import {  useState } from 'react';
-import React from "react";
+import React, { useState, useRef } from "react";
+// import TextField from "@material-ui/core/TextField";
+import Image from "next/image";
+// import PhoneInput from "react-phone-number-input";
+import 'react-phone-number-input/style.css'
 // toggle component.
-import swal from 'sweetalert';
+import swal from "sweetalert";
+import Phone from "../../assets/Phone";
 
 import { Faq } from "../Faq/Faq";
 const signUp = () => {
+  const [phone, setmobile] = useState("");
+  const [isError, setIsError] = useState(false);
+
   const [showModal, setShowModal] = React.useState(false);
   // submitOTP = () => {
   //   alert("You Are Verified 👍");
@@ -16,43 +23,49 @@ const signUp = () => {
     swal({
       icon: "success",
       title: "Thanks!",
-      text: "Your Response has been submitted"
+      text: "Your Response has been submitted",
     });
   }
 
   // Backend
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [mobile, setMobile] = useState('');
-  const [isPending, setIsPending] =useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [isPending, setIsPending] = useState(false);
 
-  const handleSubmit = (e) =>{
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const data = { email:email,name:name, mobile:mobile };
+    const data = { email: email, name: name, mobile: mobile };
 
     setIsPending(true);
 
-    fetch('',{
-        method: 'POST',
-        headers: { "content-Type" : "application/json" },
-        body: JSON.stringify(data)
-    }).then(()=>{
-        console.log('new data added');
-        alert("🎉You have Successfully Subscribed🎉");
-        setIsPending(false);
-      });
+    fetch("", {
+      method: "POST",
+      headers: { "content-Type": "application/json" },
+      body: JSON.stringify(data),
+    }).then(() => {
+      console.log("new data added");
+      alert("🎉You have Successfully Subscribed🎉");
+      setIsPending(false);
+    });
     e.target.reset();
-}
+  };
 
   return (
     <>
       <div className="relative flex flex-col-reverse px-4 py-20 mx-auto lg:block lg:flex-col lg:py-32  md:px-8 sm:max-w-xl md:max-w-full">
         <div className="z-0 flex justify-center h-full -mx-4 overflow-hidden lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center">
           <img
+<<<<<<< HEAD
             src="https://finkarma.b-cdn.net/wp-content/uploads/aecor/img/HeaderImage.png"
             className="object-cover object-right w-full h-auto lg:w-auto lg:h-full"
             alt=""
+=======
+            src="/img/HeaderImage.png"
+            className="object-cover object-right w-full h-auto lg:w-auto lg:h-full "
+            alt="laptop.png" 
+>>>>>>> 090afe92c71c75f0f13015f1ef2f04edb1ea8284
           />
         </div>
         <div className="relative flex justify-end max-w-xl mx-auto xl:pr-32 lg:max-w-screen-xl">
@@ -66,13 +79,14 @@ const signUp = () => {
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                 Open a free
                 <br className="hidden md:block" />
-                
                 <span className="inline-block text-deep-purple-accent-400">
                   Demat Account
                 </span>
               </h2>
               <p className="text-base text-gray-700 md:text-lg">
-                Open a free Demat account online with Aecor and enjoy a completely paperless online Demat account opening experience with no annual maintenance fees.
+                Open a free Demat account online with Aecor and enjoy a
+                completely paperless online Demat account opening experience
+                with no annual maintenance fees.
               </p>
             </div>
             <form onSubmit={handleSubmit}>
@@ -81,17 +95,17 @@ const signUp = () => {
                   placeholder="Name"
                   required
                   value={name}
-                  onChange={(e)=> setName(e.target.value)}
+                  onChange={(e) => setName(e.target.value)}
                   type="text"
-                  className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                  className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 focus:border-purple-400 focus:outline-none focus:shadow-outline"
                 />
                 <input
                   placeholder="Email"
                   required
                   value={email}
-                  onChange={(e)=> setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                   type="email"
-                  className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                  className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mb-0 focus:border-purple-400 focus:outline-none focus:shadow-outline"
                 />
               </div>
               <div className="flex flex-col md:flex-row">
@@ -99,11 +113,22 @@ const signUp = () => {
                   placeholder="Phone Number"
                   required
                   value={mobile}
-                  onChange={(e)=> setMobile(e.target.value)}
-                  type="number"
+                  onChange={(e) => setMobile(e.target.value)}
+                  type="text"
+                  label="Enter Valid Phone Number with country code "
+                  pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"
+                  maxLength="12"
                   className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                 />
+                {/* <PhoneInput className = "focus:border-purple-400 w-full  flex-grow h-12 w-2"
+      placeholder="Enter phone number"
+      value={value}
+      onChange={setValue}/> */}
+      {/* <div className="w-full ">
+      <Phone/>
+      </div> */}
               </div>
+              {/* <Phone/> */}
               <div className="flex items-center mt-4">
                 <button
                   type="button"
@@ -138,14 +163,11 @@ const signUp = () => {
       {/* Modal */}
       {showModal ? (
         <>
-          <div  className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
-             
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-               
                 <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                  
-                  <img src = "/img/logo.png"/>
+                  <img src="/img/logo.png" />
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => setShowModal(false)}
@@ -155,10 +177,8 @@ const signUp = () => {
                     </span>
                   </button>
                 </div>
-                
-                <div className="relative p-6 flex-auto">     
 
-
+                <div className="relative p-6 flex-auto">
                   <div class="bg-white h-64 py-3 rounded text-center">
                     <h1 class="text-2xl font-bold">OTP Verification</h1>
                     <div class="flex flex-col mt-4">
@@ -217,7 +237,7 @@ const signUp = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
                   <button
                     className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
@@ -424,12 +444,10 @@ const signUp = () => {
                 Learn more
               </a>
             </div>
-          </div>          
-          
+          </div>
         </div>
       </div>
-        <Faq/>
-     
+      <Faq />
 
       {/* <style jsx>{`
         #modalPopUP{
