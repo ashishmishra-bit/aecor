@@ -50,7 +50,7 @@ const signUp = () => {
       <div className="relative flex flex-col-reverse px-4 py-20 mx-auto lg:block lg:flex-col lg:py-32  md:px-8 sm:max-w-xl md:max-w-full">
         <div className="z-0 flex justify-center h-full -mx-4 overflow-hidden lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center">
           <img
-            src="https://kitwind.io/assets/kometa/laptop.png"
+            src="https://finkarma.b-cdn.net/wp-content/uploads/aecor/img/HeaderImage.png"
             className="object-cover object-right w-full h-auto lg:w-auto lg:h-full"
             alt=""
           />
@@ -122,12 +122,12 @@ const signUp = () => {
                 </a>
               </div>
               <p className="text-md mt-5">
-                Already have an Account ?{" "}
+                Track Existing Application {" "}
                 <a
                   href="/login"
                   className="hover:underline hover:text-purple-700 cursor:pointer"
                 >
-                  Login
+                  here
                 </a>
               </p>
             </form>
