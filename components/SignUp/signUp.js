@@ -57,15 +57,15 @@ const signUp = () => {
       <div className="relative flex flex-col-reverse px-4 py-20 mx-auto lg:block lg:flex-col lg:py-32  md:px-8 sm:max-w-xl md:max-w-full">
         <div className="z-0 flex justify-center h-full -mx-4 overflow-hidden lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center">
           <img
-<<<<<<< HEAD
+
             src="https://finkarma.b-cdn.net/wp-content/uploads/aecor/img/HeaderImage.png"
             className="object-cover object-right w-full h-auto lg:w-auto lg:h-full"
             alt=""
-=======
+
             src="/img/HeaderImage.png"
             className="object-cover object-right w-full h-auto lg:w-auto lg:h-full "
             alt="laptop.png" 
->>>>>>> 090afe92c71c75f0f13015f1ef2f04edb1ea8284
+
           />
         </div>
         <div className="relative flex justify-end max-w-xl mx-auto xl:pr-32 lg:max-w-screen-xl">
