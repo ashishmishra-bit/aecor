@@ -75,7 +75,8 @@ const signUp = () => {
               </div>
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-purple-800 sm:text-4xl sm:leading-none leading-9">
                 Open a free
-                <br className="hidden md:block leading-10" />
+                {/* <br className="hidden md:block leading-10" /> */}
+                <br/>
                 <span className="inline-block text-purple-800 leading:9 mt-3">
                   Demat Account
                 </span>
