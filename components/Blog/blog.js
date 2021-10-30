@@ -89,7 +89,7 @@ const blog = () => {
                 className="inline-block mb-3 text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-700"
               >
                 <p className="text-2xl font-bold leading-7 hover:text-purple-700">
-                  Understanding Price To Earnings Ratio In The Most Simplistic Manner
+                  Understanding PE Ratio In The Most Simplistic Manner
                 </p>
               </a>
               <p className="mb-4 text-gray-500">
