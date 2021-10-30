@@ -265,11 +265,7 @@ const signUp = () => {
 
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-          <div className="bg-green-300 w-36 h-7 rounded-full mx-auto">
-            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-              Disclosure
-            </p>
-          </div>
+
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-purple-900 sm:text-4xl md:mx-auto">
             <span className="relative inline-block text-gray-200">
               <svg
@@ -294,173 +290,17 @@ const signUp = () => {
                   height="24"
                 />
               </svg>
-              <span className="relative text-purple-900">The</span>
+              <span className="relative text-purple-900">Why</span>
             </span>{" "}
-            AGREEMENT TO TERMS & CONDITIONS
+            Open a Account With Aecor?
           </h2>
           <p className="text-base text-gray-500 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+Aecor offers a hassle-free experience. There are no complicated steps. Buy/Sell Stocks with a Single Click It doesn't make a difference if you're interested in value investing or day trading. Debt funds or equity funds Aecor  has your back.
           </p>
         </div>
-        <div className="grid max-w-screen-lg gap-8 row-gap-10 mx-auto lg:grid-cols-2">
-          <div className="flex flex-col max-w-md sm:mx-auto sm:flex-row">
-            <div className="mr-4">
-              <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-                <svg
-                  className="w-10 h-10 text-purple-600"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <h6 className="mb-3 text-xl  leading-5 font-extrabold">Stock</h6>
-              <p className="mb-3 text-sm text-gray-600">
-                A flower in my garden, a mystery in my panties. Heart attack
-                never stopped old Big Bear. I didn't even know we were calling
-                him Big Bear. We never had the chance to.
-              </p>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-700 hover:text-purple-800"
-              >
-                Learn more
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-col max-w-md sm:mx-auto sm:flex-row">
-            <div className="mr-4">
-              <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-                <svg
-                  className="w-10 h-10 text-purple-600"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">Mutual Funds</h6>
-              <p className="mb-3 text-sm text-gray-600">
-                Rough pomfret lemon shark plownose chimaera southern sandfish
-                kokanee northern sea robin Antarctic cod. Yellow-and-black
-                triplefin gulper South American Lungfish mahi-mahi,
-                butterflyfish glass catfish soapfish ling gray mullet!
-              </p>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-700 hover:text-purple-900"
-              >
-                Learn more
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-col max-w-md sm:mx-auto sm:flex-row">
-            <div className="mr-4">
-              <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-                <svg
-                  className="w-10 h-10 text-purple-600"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">
-                Currency Booking
-              </h6>
-              <p className="mb-3 text-sm text-gray-600">
-                A slice of heaven. O for awesome, this chocka full cuzzie is as
-                rip-off as a cracker. Meanwhile, in behind the bicycle shed,
-                Hercules Morse, as big as a horse and Mrs Falani were up to no
-                good with a bunch of crook pikelets.
-              </p>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-700 hover:text-purple-800"
-              >
-                Learn more
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-col max-w-md sm:mx-auto sm:flex-row">
-            <div className="mr-4">
-              <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-                <svg
-                  className="w-10 h-10 text-purple-600"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">DP Services</h6>
-              <p className="mb-3 text-sm text-gray-600">
-                Disrupt inspire and think tank, social entrepreneur but
-                preliminary thinking think tank compelling. Inspiring, invest
-                synergy capacity building, white paper; silo, unprecedented
-                challenge B-corp problem-solvers.
-              </p>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-700 hover:text-purple-900"
-              >
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
+       
       </div>
       <Faq />
-
-      {/* <style jsx>{`
-        #modalPopUP{
-          // top:-800px;
-          animation: drop .5s ease-in-out;
-        }
-        @keyframes drop{
-          0%{opacity:0}
-          70%{transform:translateY(700px)}
-          100%{transform:translateY(650px);opacity:1;}
-        }
-      
-      `}</style> */}
     </>
   );
 };
