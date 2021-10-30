@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import Link from "next/link";
 import React, { useState, useRef } from "react";
 // import TextField from "@material-ui/core/TextField";
@@ -60,11 +61,7 @@ const signUp = () => {
 
             src="https://finkarma.b-cdn.net/wp-content/uploads/aecor/img/HeaderImage.png"
             className="object-cover object-right w-full h-auto lg:w-auto lg:h-full"
-            alt=""
-
-            src="/img/HeaderImage.png"
-            className="object-cover object-right w-full h-auto lg:w-auto lg:h-full "
-            alt="laptop.png" 
+            alt=""      
 
           />
         </div>
@@ -138,22 +135,22 @@ const signUp = () => {
                   Sign Up
                 </button>
 
-                <a
+                <Link
                   href="/"
                   aria-label=""
                   className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
                 >
                   Back
-                </a>
+                </Link>
               </div>
               <p className="text-md mt-5">
                 Track Existing Application {" "}
-                <a
+                <Link
                   href="/login"
                   className="hover:underline hover:text-purple-700 cursor:pointer"
                 >
                   here
-                </a>
+                </Link>
               </p>
             </form>
           </div>
@@ -179,60 +176,60 @@ const signUp = () => {
                 </div>
 
                 <div className="relative p-6 flex-auto">
-                  <div class="bg-white h-64 py-3 rounded text-center">
-                    <h1 class="text-2xl font-bold">OTP Verification</h1>
-                    <div class="flex flex-col mt-4">
+                  <div className="bg-white h-64 py-3 rounded text-center">
+                    <h1 className="text-2xl font-bold">OTP Verification</h1>
+                    <div className="flex flex-col mt-4">
                       {" "}
                       <span>Enter the OTP you received at</span>{" "}
-                      <span class="font-bold">+91 ******876</span>{" "}
+                      <span className="font-bold">+91 ******876</span>{" "}
                     </div>
                     <div
                       id="otp"
-                      class="flex flex-row justify-center text-center px-2 mt-5"
+                      className="flex flex-row justify-center text-center px-2 mt-5"
                     >
                       {" "}
                       <input
-                        class="m-2 border h-10 w-10 text-center form-control rounded"
+                        className="m-2 border h-10 w-10 text-center form-control rounded"
                         type="text"
                         id="first"
                         maxlength="1"
                       />{" "}
                       <input
-                        class="m-2 border h-10 w-10 text-center form-control rounded"
+                        className="m-2 border h-10 w-10 text-center form-control rounded"
                         type="text"
                         id="second"
                         maxlength="1"
                       />{" "}
                       <input
-                        class="m-2 border h-10 w-10 text-center form-control rounded"
+                        className="m-2 border h-10 w-10 text-center form-control rounded"
                         type="text"
                         id="third"
                         maxlength="1"
                       />{" "}
                       <input
-                        class="m-2 border h-10 w-10 text-center form-control rounded"
+                        className="m-2 border h-10 w-10 text-center form-control rounded"
                         type="text"
                         id="fourth"
                         maxlength="1"
                       />{" "}
                       <input
-                        class="m-2 border h-10 w-10 text-center form-control rounded"
+                        className="m-2 border h-10 w-10 text-center form-control rounded"
                         type="text"
                         id="fifth"
                         maxlength="1"
                       />{" "}
                       <input
-                        class="m-2 border h-10 w-10 text-center form-control rounded"
+                        className="m-2 border h-10 w-10 text-center form-control rounded"
                         type="text"
                         id="sixth"
                         maxlength="1"
                       />{" "}
                     </div>
-                    <div class="flex justify-center text-center mt-5">
+                    <div className="flex justify-center text-center mt-5">
                       {" "}
-                      <a class="flex items-center text-blue-700 hover:text-blue-900 cursor-pointer">
-                        <span class="font-bold">Resend OTP</span>
-                        <i class="bx bx-caret-right ml-1"></i>
+                      <a className="flex items-center text-blue-700 hover:text-blue-900 cursor-pointer">
+                        <span className="font-bold">Resend OTP</span>
+                        <i className="bx bx-caret-right ml-1"></i>
                       </a>{" "}
                     </div>
                   </div>
@@ -295,7 +292,7 @@ const signUp = () => {
             Open a Account With Aecor?
           </h2>
           <p className="text-base text-gray-500 md:text-lg">
-Aecor offers a hassle-free experience. There are no complicated steps. Buy/Sell Stocks with a Single Click It doesn't make a difference if you're interested in value investing or day trading. Debt funds or equity funds Aecor  has your back.
+Aecor offers a hassle-free experience. There are no complicated steps. Buy/Sell Stocks with a Single Click It does not make a difference if you are interested in value investing or day trading. Debt funds or equity funds Aecor  has your back.
           </p>
         </div>
        
