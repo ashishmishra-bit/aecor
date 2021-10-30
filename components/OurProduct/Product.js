@@ -283,7 +283,7 @@ Gain access to data, insights and analysis across all aspects of the commodity m
                 API Access
               </h6>
               <p className="mb-3 text-sm text-gray-600">
-Connect your app to Aecor's lightning-fast API. With the shortest response time and the quickest execution.
+Connect your app to Aecor lightning-fast API. With the shortest response time and the quickest execution.
               </p>
               <Link
                 href="/"
@@ -297,7 +297,7 @@ Connect your app to Aecor's lightning-fast API. With the shortest response time 
           
         </div>
         <div  className="flex items-center justify-center pt-10">
-            <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-purple-500 text-purple-700 text-lg rounded-lg hover:bg-purple-500 hover:text-white ">
+            <button className="p-2 pl-5 pr-5 bg-transparent border-2 border-purple-500 text-purple-700 text-lg rounded-lg hover:bg-purple-500 hover:text-white ">
               View More Services
             </button>
           </div>
