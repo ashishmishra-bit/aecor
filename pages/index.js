@@ -136,7 +136,7 @@ export default function Home() {
                 <div className="max-w-xl mb-6">
                   <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-purple-800 sm:text-4xl sm:leading-none">
                     Let us handle
-                    <br className="hidden md:block" />
+                    <br className=" md:block" />
                     your next{" "}
                     <span className="inline-block text-deep-purple-accent-400">
                       destination
