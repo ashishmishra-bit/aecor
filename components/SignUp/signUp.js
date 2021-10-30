@@ -192,37 +192,37 @@ const signUp = () => {
                         className="m-2 border h-10 w-10 text-center form-control rounded"
                         type="text"
                         id="first"
-                        maxlength="1"
+                        maxLength="1"
                       />{" "}
                       <input
                         className="m-2 border h-10 w-10 text-center form-control rounded"
                         type="text"
                         id="second"
-                        maxlength="1"
+                        maxLength="1"
                       />{" "}
                       <input
                         className="m-2 border h-10 w-10 text-center form-control rounded"
                         type="text"
                         id="third"
-                        maxlength="1"
+                        maxLength="1"
                       />{" "}
                       <input
                         className="m-2 border h-10 w-10 text-center form-control rounded"
                         type="text"
                         id="fourth"
-                        maxlength="1"
+                        maxLength="1"
                       />{" "}
                       <input
                         className="m-2 border h-10 w-10 text-center form-control rounded"
                         type="text"
                         id="fifth"
-                        maxlength="1"
+                        maxLength="1"
                       />{" "}
                       <input
                         className="m-2 border h-10 w-10 text-center form-control rounded"
                         type="text"
                         id="sixth"
-                        maxlength="1"
+                        maxLength="1"
                       />{" "}
                     </div>
                     <div className="flex justify-center text-center mt-5">
