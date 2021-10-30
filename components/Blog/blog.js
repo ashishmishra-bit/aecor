@@ -1,10 +1,11 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-import Image from 'next/image';
+
 
 const blog = () => {
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     AOS.init({
       duration: 100,
