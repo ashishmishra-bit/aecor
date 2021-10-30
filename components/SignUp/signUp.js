@@ -57,9 +57,9 @@ const signUp = () => {
     <>
       <div className="relative flex flex-col-reverse px-4 py-20 mx-auto lg:block lg:flex-col lg:py-32  md:px-8 sm:max-w-xl md:max-w-full">
         <div className="z-0 flex justify-center h-full -mx-4 overflow-hidden lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center">
-          <img
-
-            src="https://finkarma.b-cdn.net/wp-content/uploads/aecor/img/HeaderImage.png"
+          <Image
+            src="/img/HeaderImage.png"
+            height={516} width={775}
             className="object-cover object-right w-full h-auto lg:w-auto lg:h-full"
             alt=""      
 
@@ -117,15 +117,9 @@ const signUp = () => {
                   maxLength="12"
                   className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                 />
-                {/* <PhoneInput className = "focus:border-purple-400 w-full  flex-grow h-12 w-2"
-      placeholder="Enter phone number"
-      value={value}
-      onChange={setValue}/> */}
-      {/* <div className="w-full ">
-      <Phone/>
-      </div> */}
+                
               </div>
-              {/* <Phone/> */}
+              
               <div className="flex items-center mt-4">
                 <button
                   type="button"
@@ -164,7 +158,8 @@ const signUp = () => {
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                  <img src="/img/logo.png" />
+                  <Image src="/img/logo.png"  height={110} width={500}
+                  alt="aecor-logo"/>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => setShowModal(false)}

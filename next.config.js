@@ -1,3 +1,5 @@
 module.exports = {
-  reactStrictMode: true,  
+  images:{
+    domains: ["https://finkarma.b-cdn.net/"],
+  }
 }
