@@ -1,12 +1,18 @@
 import "../styles/globals.css";
 import { DefaultSeo } from "next-seo";
 // import Layout from '../components/Layout';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Loader from "../assets/Preloader";
+import React from "react"
 
 import { render } from "react-dom";
 function MyApp({ Component, pageProps, router }) {
   const url = `https://aecorcap.net/${router.route}`;
+  const [loading, setLoading] = React.useState(false);
+
+  React.useEffect(() => {
+    setLoading(true);
+    setTimeout(() => setLoading(false), 2000);
+  }, []);
 
   return (
     <>
@@ -37,7 +43,15 @@ function MyApp({ Component, pageProps, router }) {
             },
           }}
         >
+          {/* <Component {...pageProps} canonical={url} key={url} /> */}
+
+          {!loading ? (
+        <React.Fragment>
           <Component {...pageProps} canonical={url} key={url} />
+        </React.Fragment>
+      ) : (
+        <Loader />
+      )}
         </div>
       
     </>

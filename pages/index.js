@@ -10,6 +10,7 @@ import Blogs from "../components/Blog/blog";
 import { useSpring, animated, config } from "react-spring";
 import lottie from "lottie-web";
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const calc = (x, y) => [
@@ -49,13 +50,8 @@ export default function Home() {
       <Head>
         <title>Aecor</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon1.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-          rel="stylesheet"
-        ></link>
+        <link rel="icon" href="/favicon1.ico" />       
+        
       </Head>
       <Navbar />
       <div>
@@ -151,12 +147,13 @@ export default function Home() {
                   </p>
                 </div>
                 <div>
-                  <a
-                    href="/"
+                  <Link
+                    href="#"
                     aria-label=""
-                    className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-purple-800"
+                    className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-400 hover:text-purple-800"
                   >
                     Learn more
+                    </Link>
                     <svg
                       className="inline-block w-3 ml-2"
                       fill="currentColor"
@@ -164,7 +161,7 @@ export default function Home() {
                     >
                       <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
                     </svg>
-                  </a>
+                  
                 </div>
               </div>
               <div className="flex items-center justify-center -mx-4 lg:pl-8 " data-aos="fade-left">

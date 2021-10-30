@@ -26,6 +26,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
+    "react-loading": "^2.0.3",
     "react-phone-number-input": "^3.1.35",
     "react-spring": "^9.3.0",
     "sweetalert": "^2.1.2",
