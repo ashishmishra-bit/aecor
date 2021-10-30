@@ -5,6 +5,7 @@ import { useEffect } from "react";
 
 const blog = () => {
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     AOS.init({
       duration: 100,
@@ -20,7 +21,7 @@ const blog = () => {
           <div className="overflow-hidden transition-shadow duration-300 bg-white rounded" >
             <a href="https://finkarma.in/denial-by-insurer-time-to-call-ombudsman" aria-label="Article">
               <img
-                src="https://finkarma.in/wp-content/uploads/2021/05/Insurance-scaled-e1622290972646-1024x512.jpg"
+                src="https://finkarma.in/wp-content/uploads/2021/05/Insurance-scaled-e1622290972646-1024x512.jpg" 
                 className="object-contain w-full h-64 rounded"
                 alt="Denial by Insurer? Time to Call Ombudsman"
               />
