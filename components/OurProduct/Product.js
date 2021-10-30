@@ -1,4 +1,5 @@
 import Images from "next/image";
+import Link from "next/link";
 import Card from "../Card/card";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -91,7 +92,7 @@ const Product = () => {
            Services to enrich you on your investing journey.
           </h2>
           <p className="text-base text-gray-500 md:text-lg">
-            Investing in the Indian Market It's never been this simple.
+            Investing in the Indian Market It is never been this simple.
           </p>
         </div>
         <div className="grid max-w-screen-lg gap-8 row-gap-10 mx-auto lg:grid-cols-2">
@@ -118,13 +119,13 @@ const Product = () => {
               <p className="mb-3 text-sm text-gray-600">
 To begin trading/investing in stocks, you must first open a Demat account. You can open a Stock Trading account with Aecor using digital KYC and least documentation.
               </p>
-              <a
+              <Link
                 href="/"
                 aria-label=""
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-700 hover:text-purple-800"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex flex-col max-w-md sm:mx-auto sm:flex-row">
@@ -150,13 +151,13 @@ To begin trading/investing in stocks, you must first open a Demat account. You c
               <p className="mb-3 text-sm text-gray-600">
               Aecor Online Mutual Fund offers a comprehensive guide to investing in Mutual Funds in India. To learn about Top Performing Mutual Funds,  Best Mutual Funds to Buy  and so on.
               </p>
-              <a
+              <Link
                 href="/"
                 aria-label=""
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-700 hover:text-purple-900"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex flex-col max-w-md sm:mx-auto sm:flex-row">
@@ -184,13 +185,13 @@ To begin trading/investing in stocks, you must first open a Demat account. You c
               <p className="mb-3 text-sm text-gray-600">
                    Aecor allows you to trade in Currency. With your Aecor Trading account, you can access all Currency pairs using a wide range of charts and indicators.
               </p>
-              <a
+              <Link
                 href="/"
                 aria-label=""
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-700 hover:text-purple-800"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex flex-col max-w-md sm:mx-auto sm:flex-row">
@@ -216,13 +217,13 @@ To begin trading/investing in stocks, you must first open a Demat account. You c
               <p className="mb-3 text-sm text-gray-600">
 Set up an trading account to invest in a company through an Initial Public Offering (IPO).
               </p>
-              <a
+              <Link
                 href="/"
                 aria-label=""
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-700 hover:text-purple-900"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex flex-col max-w-md sm:mx-auto sm:flex-row">
@@ -250,13 +251,13 @@ Set up an trading account to invest in a company through an Initial Public Offe
               <p className="mb-3 text-sm text-gray-600">
 Gain access to data, insights and analysis across all aspects of the commodity markets with Aecor trading Platform. 
               </p>
-              <a
+              <Link
                 href="/"
                 aria-label=""
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-700 hover:text-purple-900"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex flex-col max-w-md sm:mx-auto sm:flex-row">
@@ -284,13 +285,13 @@ Gain access to data, insights and analysis across all aspects of the commodity m
               <p className="mb-3 text-sm text-gray-600">
 Connect your app to Aecor's lightning-fast API. With the shortest response time and the quickest execution.
               </p>
-              <a
+              <Link
                 href="/"
                 aria-label=""
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-700 hover:text-purple-900"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           
