@@ -69,7 +69,7 @@ const Header = () => {
                 Open Account
               </a>
               <a
-                href="/about"
+                href="#services"
                 aria-label=""
                 className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700"
               >
