@@ -14,19 +14,19 @@ const SignUpNew = () => {
           <section className="copy">
               <h2>Sign Up</h2>
               <div className = "loginContainer">
-                  <p>Already have an account ?<a href="/login" className="text-blue-700 hover:underline"> <span>Login</span></a></p>
+                  <p>Already have an account ?<a href="https://online.aecorcapitalplus.com:3000/#/app" className="text-blue-700 hover:underline"> <span>Login</span></a></p>
               </div>
           </section>
             <div className="inputContainer name">
-                <label for = "fname">Full Name</label>
+                <label >Full Name</label>
                 <input id = "fname" type="text" name = "fname" placeholder="Full Name" />
             </div>
             <div className="inputContainer email">
-                <label for = "email">E-mail</label>
+                <label >E-mail</label>
                 <input id = "email" type="email" name = "email" placeholder="E-mail" />
             </div>
             <div className="inputContainer password">
-                <label for = "password">Password</label>
+                <label >Password</label>
                 <input id = "fname" type="password" name = "password" placeholder="Password" />
             </div>
             <div className = "inputContainer cta">
