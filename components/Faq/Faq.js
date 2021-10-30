@@ -92,10 +92,7 @@ const Item = ({ title, children }) => {
                 </span>{' '}
                 
               </h2>
-              <p className="text-base text-gray-500 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque rem aperiam, eaque ipsa quae.
-              </p>
+
             </div>
           </div>
           <div className="space-y-4 text-purple-900" >
@@ -116,9 +113,8 @@ A demat account is an account to hold financial securities in electronic form. I
 
             
             </Item>
-            <Item title="Is the Space Pope reptilian!?">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque rem aperiam, eaque ipsa quae.
+            <Item title="How much time does it take to open a demat account on Aecor?">
+                    If you are opting for online KYC, it takes less than 24 hours for your demat account to become active.
             </Item>
             <Item title="Do I need a demat account for Mutual Funds?">
               Demat account is not required for mutual funds.
