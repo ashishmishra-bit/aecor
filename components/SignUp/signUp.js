@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Link from "next/link";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 // import TextField from "@material-ui/core/TextField";
 import Image from "next/image";
 // import PhoneInput from "react-phone-number-input";
@@ -8,6 +8,7 @@ import 'react-phone-number-input/style.css'
 // toggle component.
 import swal from "sweetalert";
 import Phone from "../../assets/Phone";
+import lottie from "lottie-web";
 
 import { Faq } from "../Faq/Faq";
 const signUp = () => {
@@ -27,6 +28,19 @@ const signUp = () => {
       text: "Your Response has been submitted",
     });
   }
+
+   // Lottie animation .
+   const container = useRef(null);
+
+   useEffect(() => {
+     lottie.loadAnimation({
+       container: container.current,
+       renderer: "svg",
+       loop: true,
+       autoplay: true,
+       animationData: require("../../assets/walking.json"),
+     });
+   }, []);
 
   // Backend
 
@@ -294,6 +308,18 @@ Aecor offers a hassle-free experience. There are no complicated steps. Buy/Sel
        
       </div>
       <Faq />
+
+      <div className="flex flex-col md:flex-row px-6 md:px-52 mx-auto">
+        <div className="w-full md:w-3/5">
+          <div className="flex flex-col items-center md:pt-6">
+            <div className="text-3xl md:text-4xl font-semibold mt-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, voluptate.</div>
+            <div className="text-lg mt-4 font-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, voluptate. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, facere.</div>
+          </div>
+        </div>
+        <div className="w-full md:w-2/5">
+          <div className="container" ref={container}></div>
+        </div>
+      </div>
     </>
   );
 };

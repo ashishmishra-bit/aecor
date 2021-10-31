@@ -268,7 +268,7 @@ const service = () => {
       `}</style> */}
 
 
-<main className="bg-gray-100 dark:bg-gray-800 h-screen overflow-hidden relative">
+{/* <main className="bg-gray-100 dark:bg-gray-800 h-screen overflow-hidden relative">
     <div className="flex items-start justify-between">
         <div className="h-screen hidden lg:block shadow-lg relative w-80">
             <div className="bg-white h-full dark:bg-gray-700">
@@ -852,10 +852,10 @@ const service = () => {
             </div>
         </div>
     </div>
-</main>
+</main> */}
 
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
