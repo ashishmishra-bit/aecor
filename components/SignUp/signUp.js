@@ -315,6 +315,14 @@ Aecor offers a hassle-free experience. There are no complicated steps. Buy/Sel
             <div className="text-3xl md:text-4xl font-semibold mt-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, voluptate.</div>
             <div className="text-lg mt-4 font-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, voluptate. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, facere.</div>
           </div>
+          <div>
+            <a href="tel:+919431231375" class="inline-flex items-center my-4 px-4 py-2 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              Call
+            </a>
+          </div>
         </div>
         <div className="w-full md:w-2/5">
           <div className="container" ref={container}></div>
