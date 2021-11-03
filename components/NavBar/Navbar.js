@@ -76,16 +76,20 @@ export const Navbar = () => {
           }   w-full lg:inline-flex lg:flex-grow lg:w-min`}
         >
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full  items-start  flex  lg:h-auto lg:items-start ml-5">
-            <Link href="https://online.aecorcapitalplus.com:3000/#/app">
+            <Link href="https://online.aecorcapitalplus.com:3000/#/app" >
+              <a target="_blank">
               <button className="bg-transparent hover:bg-transparent bg-purple-800 text-white font-semibold lg:flex-grow hover:text-purple-800 py-2 px-4 border hover:border-purple-800  rounded mr-6">
                 Sign In
               </button>
+              </a>
             </Link>
 
             <Link href="/signup">
-              <button className="bg-transparent hover:bg-purple-800 text-purple-800 font-semibold lg:flex-grow hover:text-white py-2 px-4 border border-purple-800 hover:border-transparent rounded lg:animate-bounce ">
+             <a target="_blank">
+             <button className="bg-transparent hover:bg-purple-800 text-purple-800 font-semibold lg:flex-grow hover:text-white py-2 px-4 border border-purple-800 hover:border-transparent rounded lg:animate-bounce ">
                 Open Account
               </button>
+             </a>
             </Link>           
           </div>
         </div>
