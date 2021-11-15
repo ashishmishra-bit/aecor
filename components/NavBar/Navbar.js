@@ -58,7 +58,7 @@ export const Navbar = () => {
               </a>
             </Link>
 
-            <Link href="#">
+            <Link href="/product">
               <a className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-purple-800 font-bold items-center justify-center hover:border-purple-800 hover:border-b-2 ">
                 Product
               </a>
